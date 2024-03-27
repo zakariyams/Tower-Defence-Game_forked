@@ -10,7 +10,7 @@ We will implement a Tower Defence Game. It will have "towers" that basically def
 | Adrian Fyrpil | fyad22vf@student.ju.se or adrian.fyrpihl@hotmail.se|
 | Akbarjon Nodirjonovich Radjabov | MAIL |
 | Jakob Jack Loula | loja22vr@student.ju.se or Jakob-loula@hotmail.com|
-| Yoseph Naoom | MAIL |
+| Yoseph Naoom | nayoma22@student.ju.se or yosephsarab@gmail.com |
 | Zakariya Mohamed Shafe | moza22kw@student.ju.se or zakariyamohamedshafe@gmail.com |
   
   
@@ -18,7 +18,7 @@ We will implement a Tower Defence Game. It will have "towers" that basically def
 I, Adrian Fyrpil, declare that I am the sole author of the content I add to this repository.  
 I, Zakariya Mohamed Shafe, declare that I am the sole author of the content I add to this repository.  
 I, Jakob Loula, declare that I am the sole author of the content I add to this repository.  
-  
+I, Yoseph Naoom, declare that I am the sole author of the content I add to this repository.  
   
 # Plan
 We will start by first developing a normal "testing world" with very simple models where we can test the different towers and develop them.  
