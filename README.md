@@ -6,7 +6,7 @@
 | - | - |
 | Adrian Fyrpil | fyad22vf@student.ju.se or adrian.fyrpihl@hotmail.se|
 | Akbarjon Nodirjonovich Radjabov | MAIL |
-| Jakob Jack Loula | loja22vr@student.ju.se |
+| Jakob Jack Loula | loja22vr@student.ju.se or Jakob-loula@hotmail.com|
 | Yoseph Naoom | MAIL |
 | Zakariya Mohamed Shafe | moza22kw@student.ju.se or zakariyamohamedshafe@gmail.com |
 
