@@ -1,6 +1,6 @@
 # Tower-Defence-Game
 
-#Software Development - Tower Defence Project
+# Software Development - Tower Defence Project
 
 | Name | Email |
 | - | - |
@@ -11,3 +11,4 @@
 | Zakariya Mohamed Shafe | moza22kw@student.ju.se or zakariyamohamedshafe@gmail.com |
 
 I, Adrian Fyrpil, declare that I am the sole author of the content I add to this repository.
+I, Zakariya Mohamed Shafe, declare that I am the sole author of the content I add to this repository.
