@@ -28,8 +28,9 @@ We will also have a group working on the normal maps that we will play on later.
 ## Language
 We will be writing out game in C# and the visuals will be done using the Unity game engine. 
 
-### Build system
+## Build system
 We will be using the .Net framework.
+
   
 # How to Build
 Empty now...
