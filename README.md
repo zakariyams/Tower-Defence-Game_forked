@@ -2,6 +2,7 @@
 
 # Software Development - Tower Defence Project
 We will implement a Tower Defence Game. It will have "towers" that basically defends against enemies trying to get to the end of the map or stage. We will have different towers and enemies and have some sort of upgrade/ progression system.  
+To follow our progress visit the Project page's [KanbanBoard](https://github.com/users/AdeptiC/projects/2/views/1).  
   
 
 # Collaborators
@@ -24,9 +25,14 @@ I, Akbar Nodirjonovich Radjabov, declare that I am the sole author of the conten
   
 # Plan
 We will start by first developing a normal "testing world" with very simple models where we can test the different towers and develop them.  
-We will also have a group working on the normal maps that we will play on later. This will Be making smooth walking for the enemies aswell as creating and building the actual playable map.  
-We will do the project in c# and Unity game engine as our build system.
-  
+We will also have a group working on the normal maps that we will play on later. This will Be making smooth walking for the enemies aswell as creating and building the actual playable map.
+
+## Language
+We will be writing the game in C# 
+
+## Build system
+We will be using Unity game engine.
+
   
 # How to Build
 Empty now...
