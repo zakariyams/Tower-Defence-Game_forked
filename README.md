@@ -24,7 +24,12 @@ I, Akbar Nodirjonovich Radjabov, declare that I am the sole author of the conten
 # Plan
 We will start by first developing a normal "testing world" with very simple models where we can test the different towers and develop them.  
 We will also have a group working on the normal maps that we will play on later. This will Be making smooth walking for the enemies aswell as creating and building the actual playable map.
-  
+
+## Language
+We will be writing out game in C# and the visuals will be done using the Unity game engine. 
+
+### Build system
+We will be using the .Net framework.
   
 # How to Build
 Empty now...
