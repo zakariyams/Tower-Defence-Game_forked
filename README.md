@@ -19,8 +19,8 @@ To follow our progress visit the Project page's [KanbanBoard](https://github.com
 I, Adrian Fyrpil, declare that I am the sole author of the content I add to this repository.  
 I, Zakariya Mohamed Shafe, declare that I am the sole author of the content I add to this repository.  
 I, Jakob Loula, declare that I am the sole author of the content I add to this repository.  
-I, Yoseph Naoom, declare that I am the sole author of the content I add to this repository.
-I, Akbar Nodirjonovich Radjabov, declare that I am the sole author of the content I add to this repository.
+I, Yoseph Naoom, declare that I am the sole author of the content I add to this repository.  
+I, Akbar Nodirjonovich Radjabov, declare that I am the sole author of the content I add to this repository.  
   
   
 # Plan
