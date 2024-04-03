@@ -1,7 +1,12 @@
 # Tower-Defence-Game
 
 # Software Development - Tower Defence Project
-We will implement a Tower Defence Game. It will have "towers" that basically defends against enemies trying to get to the end of the map or stage. We will have different towers and enemies and have some sort of upgrade/ progression system.  
+In this project we are going to develop a tower defence game. A Tower defence game is a single player game that you can play on your computer/phone. Usually this type of game is about building certain objects called "Towers" that you use to stategically deploy using a ingame-currency that you earn from eliminating various enemies during the different stages of the game.
+
+Depending on the level of the enemy you are eliminating you will earn different amounts of currency usually this is usually dependent on how strong the enemy objective is. Of course this game will not always be forgiving, you will have a certain amount of lives that once you ran out the game will end and you will have the oppurtunity to start a new game. 
+
+There will be a shop that you can buy the different towers, while some towers are stronger than others there will also be other things you can use your currency for. One of which is buying "upgrades" on your tower making them exclusively better,stronger and more effective against the enemies traveling through the map trying to get the other side. 
+
 To follow our progress visit the Project page's [KanbanBoard](https://github.com/users/AdeptiC/projects/2/views/1).  
   
 
@@ -36,3 +41,7 @@ We will be using Unity game engine.
   
 # How to Build
 Empty now...
+
+# Rough compilation and running instructions 
+
+Once the game is finished and ready for release. A .exe file will be created and given to players. All they need to do is download the file and the subfiles within to run the game. This is possible in the Unity game engine. 
