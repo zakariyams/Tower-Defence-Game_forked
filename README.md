@@ -45,3 +45,10 @@ Empty now...
 # Rough compilation and running instructions 
 
 Once the game is finished and ready for release. A .exe file will be created and given to players. All they need to do is download the file and the subfiles within to run the game. This is possible in the Unity game engine. Other than that currently you can run the game in the unity game engine by pressing the play button. This will simulate the game along with the C# code. 
+
+# Working compilation and running instructions
+
+This section is empty for now. More information will be provided throughout the developement process. For futher information please review  
+the "Rough compilation and running instructions# section.
+
+
