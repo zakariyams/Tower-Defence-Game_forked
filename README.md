@@ -1,7 +1,5 @@
 # Tower-Defence-Game
 
-This is a new line to be reverted
-
 # Software Development - Tower Defence Project
 In this project we are going to develop a tower defence game. A Tower defence game is a single player game that you can play on your computer/phone. Usually this type of game is about building certain objects called "Towers" that you use to stategically deploy using a ingame-currency that you earn from eliminating various enemies during the different stages of the game.
 
