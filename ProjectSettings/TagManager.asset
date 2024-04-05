@@ -8,10 +8,6 @@ TagManager:
   - Towers
   - Button
   - Panel
-  - AdrianTestZone1
-  - AdrianTestZone2
-  - AdrianTestZone3
-  - AdrianTestZone4
   - hit
   layers:
   - Default

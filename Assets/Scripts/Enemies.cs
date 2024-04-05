@@ -9,11 +9,15 @@ public class Enemies : MonoBehaviour
     private int enemiesPerWave;
     private float moveSpeed;
     private int hp1;
-    private string name;
+
     [SerializeField] private Rigidbody2D[] enemyType;
 
     private int stage1;
     private int stage2;
+
+    private int pathIndex = 0;
+    private Transform pathTarget;
+    [SerializeField]private Rigidbody2D rb;
 
     //private spawncounter;
 
@@ -51,12 +55,29 @@ public class Enemies : MonoBehaviour
 
     private void Update()
     {
-       
+       if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
+       {
+            pathIndex += 1;
+
+            if (pathIndex == LevelManager.main.Path.Length)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            pathTarget = LevelManager.main.Path[pathIndex];
+        }
     }
 
     private void Start()
     {
-        
+        pathTarget = LevelManager.main.Path[pathIndex];
+        moveSpeed = 4.0f;
     }
 
+    private void FixedUpdate()
+    {
+        Vector2 direction = (pathTarget.position - transform.position).normalized;
+        rb.velocity = direction * moveSpeed;
+    }
 }
