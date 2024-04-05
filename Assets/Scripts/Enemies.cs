@@ -6,29 +6,54 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
-    protected float moveSpeed;
-    protected int health;
+    private int enemiesPerWave;
+    private float moveSpeed;
+    private int hp1;
+
+    [SerializeField] private Rigidbody2D[] enemyType;
+
+    private int stage1;
+    private int stage2;
 
     private int pathIndex = 0;
     private Transform pathTarget;
     [SerializeField]private Rigidbody2D rb;
 
-    private void Start()
+    //private spawncounter;
+
+
+    private void  Endwave()
     {
-        EnemyStart();
+        
+    }
+
+    // Update is called once per frame
+    /*private void SpawnEnemy()
+    {
+     
+        
+        stage1 = 200;
+
+        if (stage == 1)
+        { 
+            for (int i = 0; i < stage1; i++)
+            {
+                speedyflamingo++;
+            }
+        }
+    }*/
+
+
+
+
+
+    private int EnemiesPerWave()
+    {
+        // enemies per wave 1, 2,3,4 and 5 so far 
+        return 0;
     }
 
     private void Update()
-    {
-        EnemyUpdate();
-    }
-
-    private void FixedUpdate()
-    {
-        EnemyFixedUpdate();
-    }
-
-    protected void EnemyUpdate()
     {
        if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
        {
@@ -44,14 +69,13 @@ public class Enemies : MonoBehaviour
         }
     }
 
-    protected void EnemyStart()
+    private void Start()
     {
         pathTarget = LevelManager.main.Path[pathIndex];
-        moveSpeed = 1.0f;
-        health = 100;
+        moveSpeed = 4.0f;
     }
 
-    protected void EnemyFixedUpdate()
+    private void FixedUpdate()
     {
         Vector2 direction = (pathTarget.position - transform.position).normalized;
         rb.velocity = direction * moveSpeed;
