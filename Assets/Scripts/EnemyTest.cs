@@ -23,10 +23,9 @@ public class EnemyTest : MonoBehaviour
         {
             index++;
             target = points[index];
-            if (index == 6)
+            if (index == 8)
             {
-                index = 0;
-                target = points[index];
+                Destroy(rb);
             }
 
         }

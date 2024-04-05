@@ -13,7 +13,7 @@ public class Enemies : MonoBehaviour
 
     private int pathIndex = 0;
     private Transform pathTarget;
-    [SerializeField]private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
 
     private void Start()
     {
@@ -32,8 +32,8 @@ public class Enemies : MonoBehaviour
 
     protected void EnemyUpdate()
     {
-       if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
-       {
+        if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
+        {
             pathIndex += 1;
 
             if (pathIndex == LevelManager.main.Path.Length)

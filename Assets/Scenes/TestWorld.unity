@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 34321786}
   - component: {fileID: 34321785}
   - component: {fileID: 34321784}
-  - component: {fileID: 34321783}
+  - component: {fileID: 34321787}
   m_Layer: 0
   m_Name: MediumEnemy
   m_TagString: Untagged
@@ -142,20 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &34321783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34321782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683fe14428a8a374aa5e7367b57eb0db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyType: []
-  rb: {fileID: 34321784}
 --- !u!50 &34321784
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +236,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34321787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34321782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683fe14428a8a374aa5e7367b57eb0db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: []
+  rb: {fileID: 34321784}
 --- !u!1 &252366168
 GameObject:
   m_ObjectHideFlags: 0
