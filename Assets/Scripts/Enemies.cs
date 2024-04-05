@@ -57,4 +57,12 @@ public class Enemies : MonoBehaviour
         Vector2 direction = (pathTarget.position - transform.position).normalized;
         rb.velocity = direction * moveSpeed;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy (collision.gameObject);
+        }
+    }
 }
