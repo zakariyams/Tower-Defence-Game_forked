@@ -13,6 +13,7 @@ TagManager:
   - AdrianTestZone3
   - AdrianTestZone4
   - hit
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 
