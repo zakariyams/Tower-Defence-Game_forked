@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     public Sprite[] sprites;
     private int spriteIndex = 0;
 
