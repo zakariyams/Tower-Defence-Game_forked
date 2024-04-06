@@ -108,6 +108,8 @@ public class Enemies : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
+        Debug.Log("hit");
         if (collision.gameObject.tag == "Bullet")
         {
             Destroy (collision.gameObject);
@@ -119,7 +121,7 @@ public class Enemies : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (20 / health), 0.1f, 1f);
+            healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
         }
     }
 }

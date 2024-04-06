@@ -11,6 +11,8 @@ public abstract class Towers : MonoBehaviour
     public float Bps {  get; protected set; }
     [SerializeField] private LayerMask enemy;
     public GameObject Target { get; protected set; }
+
+    public float Damage { get;  set; }
     
     // Finds the closest enemy and places it as the next target. RayCAstHit2D[] is an array of all objects that goes in the circle
     public void FindTarget( )
