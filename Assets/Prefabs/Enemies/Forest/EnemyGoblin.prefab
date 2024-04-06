@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4422779676827449021}
   - component: {fileID: 5365496522588275883}
   m_Layer: 0
-  m_Name: Health
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3215689478186908729}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8, z: 0}
+  m_LocalPosition: {x: -0.02, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.1230305, b: 0, a: 1}
+  m_Color: {r: 0.22352941, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 5919111144175019099}
   - component: {fileID: 6341997825876832933}
   m_Layer: 8
-  m_Name: EnemyGoblin 1
+  m_Name: EnemyGoblin
   m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,6 +267,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 87f3ce51563038048bc8fe2eaf6f2fbb, type: 3}
   - {fileID: 21300000, guid: 2808c0918eaad6141afaeb1ae72317a0, type: 3}
   rb: {fileID: 3511464422489347}
-  moveSpeed: 3
+  moveSpeed: 2.5
   health: 100
+  pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 4422779676827449021}
