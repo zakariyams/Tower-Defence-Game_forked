@@ -57,7 +57,6 @@ public class Enemies : MonoBehaviour
 
     protected void Update()
     {
-
         HealthBarChange();
         if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
         {
@@ -106,7 +105,7 @@ public class Enemies : MonoBehaviour
 
     private void HealthBarChange()
     {
-       float healthpercentage = curHealth / health;
+        float healthpercentage = curHealth / health;
         if (healthpercentage <= 0f)
         {
             Spawner.onEnemyDestroyed.Invoke();
@@ -122,9 +121,6 @@ public class Enemies : MonoBehaviour
             color.color = Color.yellow;
         }
     }
-
-
-
 
     protected void Start()
     {
@@ -143,7 +139,11 @@ public class Enemies : MonoBehaviour
         
         float damage = collision.gameObject.GetComponent<Bullet>().damage;
         if (collision.gameObject.tag == "Bullet")
+<<<<<<< HEAD
         {            
+=======
+        {
+>>>>>>> 19ee935512bdcc6d184580a02edc58dede864082
             Destroy (collision.gameObject);
 
             curHealth -= damage;
