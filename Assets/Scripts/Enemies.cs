@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using System.Runtime.CompilerServices;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
@@ -19,15 +21,17 @@ public class Enemies : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
     private SpriteRenderer spriteRenderer;
+    private SpriteRenderer color;
     private int spriteIndex = 0;
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float health;
-
+    public Vector3 pivotOffset;
     private float curHealth;
 
     [SerializeField] private Transform healthBar;
+
 
     private int pathIndex = 0;
     private Transform pathTarget;
@@ -35,7 +39,9 @@ public class Enemies : MonoBehaviour
     protected void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        color = healthBar.GetComponent<SpriteRenderer>();
         curHealth = health;
+
     }
 
     protected void AnimateSprite()
@@ -51,9 +57,12 @@ public class Enemies : MonoBehaviour
 
     protected void Update()
     {
+
+        HealthBarChange();
         if (Vector2.Distance(pathTarget.position, transform.position) <= 0.05f)
         {
             pathIndex += 1;
+            
 
             if (pathIndex == LevelManager.main.Path.Length)
             {
@@ -94,6 +103,26 @@ public class Enemies : MonoBehaviour
         }
     }
 
+    private void HealthBarChange()
+    {
+       float healthpercentage = curHealth / health;
+        if (healthpercentage <= 0f)
+        {
+            Destroy(gameObject);
+        }
+        else if (healthpercentage < 0.25f)
+        {
+            color.color = Color.red;
+        }
+        else if (healthpercentage < 0.5f)
+        {
+            color.color = Color.yellow;
+        }
+    }
+
+
+
+
     protected void Start()
     {
         pathTarget = LevelManager.main.Path[pathIndex];
@@ -108,18 +137,18 @@ public class Enemies : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float damage = collision.transform.parent.GetComponent<Towers>().Damage;
-        Debug.Log(damage);
+        
+        float damage = collision.gameObject.GetComponent<Bullet>().damage;
         if (collision.gameObject.tag == "Bullet")
         {
+
+            
             Destroy (collision.gameObject);
 
-            curHealth -= 20;
+            curHealth -= damage;
+            
 
-            if (curHealth <= 0)
-            {
-                Destroy(gameObject);
-            }
+
 
             healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
         }
