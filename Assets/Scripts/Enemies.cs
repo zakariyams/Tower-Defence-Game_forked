@@ -108,7 +108,7 @@ public class Enemies : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        float damage = collision.gameObject.transform.parent.transform.GetComponent<Towers>().Damage;
+        float damage = collision.transform.parent.GetComponent<Towers>().Damage;
         Debug.Log(damage);
         if (collision.gameObject.tag == "Bullet")
         {
