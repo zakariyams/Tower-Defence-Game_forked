@@ -139,13 +139,11 @@ public class Enemies : MonoBehaviour
         
         float damage = collision.gameObject.GetComponent<Bullet>().damage;
         if (collision.gameObject.tag == "Bullet")
-<<<<<<< HEAD
-        {            
-=======
         {
->>>>>>> 19ee935512bdcc6d184580a02edc58dede864082
-            Destroy (collision.gameObject);
+            Destroy(collision.gameObject);
+        
 
+               
             curHealth -= damage;
 
             healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
