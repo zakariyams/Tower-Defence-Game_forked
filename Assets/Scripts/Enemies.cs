@@ -66,6 +66,7 @@ public class Enemies : MonoBehaviour
 
             if (pathIndex == LevelManager.main.Path.Length)
             {
+                Spawner.onEnemyDestroyed.Invoke();
                 Destroy(gameObject);
                 return;
             }
@@ -108,7 +109,9 @@ public class Enemies : MonoBehaviour
        float healthpercentage = curHealth / health;
         if (healthpercentage <= 0f)
         {
+            Spawner.onEnemyDestroyed.Invoke();
             Destroy(gameObject);
+            return;
         }
         else if (healthpercentage < 0.25f)
         {
@@ -140,15 +143,10 @@ public class Enemies : MonoBehaviour
         
         float damage = collision.gameObject.GetComponent<Bullet>().damage;
         if (collision.gameObject.tag == "Bullet")
-        {
-
-            
+        {            
             Destroy (collision.gameObject);
 
             curHealth -= damage;
-            
-
-
 
             healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
         }
