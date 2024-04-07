@@ -10,6 +10,7 @@ TagManager:
   - Panel
   - hit
   - Bullet
+  - Rocket
   layers:
   - Default
   - TransparentFX

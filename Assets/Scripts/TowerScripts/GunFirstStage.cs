@@ -13,17 +13,15 @@ public class GunFirstStage : Towers
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
     [SerializeField] private GameObject bullet;
-    [SerializeField] public float damage;
-    private float timeUntilFire;
+    
 
 
-    private void Start()
+    private void Awake()
     {
         Range = range;
         Bulletspeed = bulletspeed;
         Bps = bps;
         Target = target;
-        Damage = damage;
     }
 
     public override IEnumerator Fire()
@@ -37,34 +35,18 @@ public class GunFirstStage : Towers
         Destroy(Firebullet);
     }
 
-
-    protected override void Update()
-    {
-        if (Target == null)
-        {
-            FindTarget();
-            return;
-        }
-
-        Vector2 direction = Target.gameObject.transform.position - transform.position;
-        transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-        timeUntilFire += Time.deltaTime;
-
-        if (!CheckInRange())
-        {
-            Target = null;
-        }
-        else if (timeUntilFire >= 1f / Bps && CheckInRange())
-        {
-            StartCoroutine(Fire());
-            timeUntilFire = 0f;
-        }
-    }
-
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+
+
+    protected override void Update()
+    {
+       GunUpdate();
+    }
+
+    
 
 }

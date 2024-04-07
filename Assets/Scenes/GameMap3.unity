@@ -8122,6 +8122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1553081988532700129, guid: 8584defe5069acb43998a657f691b48e, type: 3}
+      propertyPath: bulletspeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6301559603392158661, guid: 8584defe5069acb43998a657f691b48e, type: 3}
       propertyPath: m_Name
       value: Missile_Launcher

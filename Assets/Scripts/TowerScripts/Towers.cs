@@ -11,9 +11,8 @@ public abstract class Towers : MonoBehaviour
     public float Bps {  get; protected set; }
     [SerializeField] private LayerMask enemy;
     public GameObject Target { get; protected set; }
+    protected float timeUntilFire;
 
-    public float Damage { get;  set; }
-    
     // Finds the closest enemy and places it as the next target. RayCAstHit2D[] is an array of all objects that goes in the circle
     public void FindTarget( )
     {
@@ -52,5 +51,31 @@ public abstract class Towers : MonoBehaviour
         Vector2 offset = target.transform.position - bullet.transform.position;
         bullet.transform.rotation = Quaternion.FromToRotation(Vector3.up, offset);
     }
+
+    protected void GunUpdate()
+    {
+        if (Target == null)
+        {
+            FindTarget();
+            return;
+        }
+
+        Vector2 direction = Target.gameObject.transform.position - transform.position;
+        transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+        timeUntilFire += Time.deltaTime;
+
+        if (!CheckInRange())
+        {
+            Target = null;
+        }
+        else if (timeUntilFire >= 1f / Bps && CheckInRange())
+        {
+            StartCoroutine(Fire());
+            timeUntilFire = 0f;
+        }
+    }
+
+
+
 
 }

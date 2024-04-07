@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -7064579994494017272}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Bullet
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f5d8c786d1a754b9acf792d360f5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 100
+  blastradius: 1
