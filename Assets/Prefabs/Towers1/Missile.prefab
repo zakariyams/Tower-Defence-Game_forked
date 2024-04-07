@@ -12,10 +12,21 @@ GameObject:
   - component: {fileID: 2109528598129177449}
   - component: {fileID: 2044240822219895586}
   - component: {fileID: 4810958663352080736}
+<<<<<<< HEAD
   - component: {fileID: 807145250360570759}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - component: {fileID: 807145250360570759}
+=======
+  - component: {fileID: -7064579994494017272}
+>>>>>>> 5d0cfc5a128b01d5ee250f7676aaf2a87ed79e52
+=======
+>>>>>>> parent of 8ce056b7 (Blast Radius implemented. See Issue #35)
+>>>>>>> 2b822982671826304c3b74f33b3276cded4b1ee0
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Rocket
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,6 +160,11 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.56, y: 1.01}
   m_Direction: 0
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2b822982671826304c3b74f33b3276cded4b1ee0
 --- !u!114 &807145250360570759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +179,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   blastRadius: 1
+<<<<<<< HEAD
+=======
+=======
+  damage: 25
+>>>>>>> 5d0cfc5a128b01d5ee250f7676aaf2a87ed79e52
+=======
+>>>>>>> parent of 8ce056b7 (Blast Radius implemented. See Issue #35)
+>>>>>>> 2b822982671826304c3b74f33b3276cded4b1ee0

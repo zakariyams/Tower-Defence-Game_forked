@@ -115,11 +115,11 @@ public class Enemies : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        else if (healthpercentage <= 0.25f)
+        else if (healthpercentage < 0.25f)
         {
             color.color = Color.red;
         }
-        else if (healthpercentage <= 0.5f)
+        else if (healthpercentage < 0.5f)
         {
             color.color = Color.yellow;
         }
@@ -137,12 +137,19 @@ public class Enemies : MonoBehaviour
         rb.velocity = direction * moveSpeed;
     }
 
-    public void TakeDamage(float damage)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        curHealth -= damage;
-        healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
+        
+        float damage = collision.gameObject.GetComponent<Bullet>().damage;
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy(collision.gameObject);
+        
+
+               
+            curHealth -= damage;
+
+            healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
+        }
     }
-
-
-
 }
