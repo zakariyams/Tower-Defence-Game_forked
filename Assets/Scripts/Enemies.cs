@@ -111,7 +111,7 @@ public class Enemies : MonoBehaviour
         if (healthpercentage <= 0f)
         {
             Spawner.onEnemyDestroyed.Invoke();
-            LevelManager.main.IncreaseCurrency(worth); // Currency System
+            LevelManager.main.IncreaseCurrency(worth);
             Destroy(gameObject);
             return;
         }

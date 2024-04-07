@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
- // Spawner for mobs
 public class Spawner : MonoBehaviour
 {
 
@@ -76,16 +75,10 @@ public class Spawner : MonoBehaviour
     }
     private void SpawnEnemy()
     {
-        // Choose a random index within the range of enemyprefabs array
-        int randomIndex = Random.Range(0, enemyprefabs.Length);
 
-        // Get the randomly chosen prefab
-        GameObject prefabToSpawn = enemyprefabs[randomIndex];
-
-        // Spawn the enemy prefab
+        GameObject prefabToSpawn = enemyprefabs[0];
         Instantiate(prefabToSpawn, LevelManager.main.StartPoint.position, Quaternion.identity);
     }
-
 
     private int EnemiesPerWave()
     {
