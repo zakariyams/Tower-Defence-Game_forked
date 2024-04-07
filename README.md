@@ -28,8 +28,7 @@ I, Yoseph Naoom, declare that I am the sole author of the content I add to this 
 I, Akbar Nodirjonovich Radjabov, declare that I am the sole author of the content I add to this repository.  
   
 # Plan
-We will start by first developing a normal "testing world" with very simple models where we can test the different towers and develop them.  
-We will also have a group working on the normal maps that we will play on later. This will Be making smooth walking for the enemies aswell as creating and building the actual playable map.
+We will start by first developing a normal "testing world" with very simple models where we can test the different towers and develop them. We will also have a group working on the normal maps that we will play on later. This will Be making smooth walking for the enemies aswell as creating and building the actual playable map.
 
 ## Language & Build System
 We will be using the Unity game engine and write scripts in the language C#.
@@ -43,7 +42,6 @@ Once the game is finished and ready for release. A .exe file will be created and
 
 # Working compilation and running instructions
 
-This section is empty for now. More information will be provided throughout the developement process. For futher information please review  
-the "Rough compilation and running instructions# section.
+This section is empty for now. More information will be provided throughout the developement process. For futher information please review the "Rough compilation and running instructions# section.
 
 
