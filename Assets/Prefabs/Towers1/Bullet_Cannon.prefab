@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3095515234928167662}
   - component: {fileID: 1369561540903443657}
   - component: {fileID: 2728330368172203633}
-  - component: {fileID: 6774440062459677969}
+  - component: {fileID: -2917920528683360283}
   m_Layer: 0
   m_Name: Bullet_Cannon
   m_TagString: Bullet
@@ -149,7 +149,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.26, y: 0.52}
   m_Direction: 0
---- !u!114 &6774440062459677969
+--- !u!114 &-2917920528683360283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f5d8c786d1a754b9acf792d360f5ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 10
+  blastRadius: 0

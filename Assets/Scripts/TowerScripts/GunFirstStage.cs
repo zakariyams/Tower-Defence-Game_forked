@@ -13,7 +13,11 @@ public class GunFirstStage : Towers
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
     [SerializeField] private GameObject bullet;
+<<<<<<< HEAD
     
+=======
+    private float timeUntilFire;
+>>>>>>> 797a89f33d93ab592a1619be83e61ff716eefa49
 
 
     private void Awake()

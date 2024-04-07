@@ -13,6 +13,11 @@ public abstract class Towers : MonoBehaviour
     public GameObject Target { get; protected set; }
     protected float timeUntilFire;
 
+<<<<<<< HEAD
+=======
+
+    
+>>>>>>> 797a89f33d93ab592a1619be83e61ff716eefa49
     // Finds the closest enemy and places it as the next target. RayCAstHit2D[] is an array of all objects that goes in the circle
     public void FindTarget( )
     {

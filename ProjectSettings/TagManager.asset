@@ -10,6 +10,13 @@ TagManager:
   - Panel
   - hit
   - Bullet
+<<<<<<< HEAD
+=======
+  - AdrianTestZone4
+  - AdrianTestZone1
+  - AdrianTestZone3
+  - AdrianTestZone2
+>>>>>>> 797a89f33d93ab592a1619be83e61ff716eefa49
   - Rocket
   layers:
   - Default
