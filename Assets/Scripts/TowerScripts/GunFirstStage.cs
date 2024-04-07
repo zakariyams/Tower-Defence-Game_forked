@@ -13,7 +13,6 @@ public class GunFirstStage : Towers
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
     [SerializeField] private GameObject bullet;
-    [SerializeField] public float damage;
     private float timeUntilFire;
 
 
@@ -23,7 +22,6 @@ public class GunFirstStage : Towers
         Bulletspeed = bulletspeed;
         Bps = bps;
         Target = target;
-        Damage = damage;
     }
 
     public override IEnumerator Fire()

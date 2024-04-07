@@ -10,6 +10,11 @@ TagManager:
   - Panel
   - hit
   - Bullet
+  - AdrianTestZone4
+  - AdrianTestZone1
+  - AdrianTestZone3
+  - AdrianTestZone2
+  - Rocket
   layers:
   - Default
   - TransparentFX
