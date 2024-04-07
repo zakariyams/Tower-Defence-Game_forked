@@ -132,12 +132,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+  timeUntilFire: 0
   range: 5
   bulletspeed: 20
   bps: 1
   bulletspawn: {fileID: 2050063024905950572}
-  bullet: {fileID: 2375087163918192472, guid: 36160251fed551d429fe97a59c6dbf10, type: 3}
+  bullet: {fileID: 918506522163829341, guid: 12957524a20efbb47b99b41021064207, type: 3}
 --- !u!1 &8936171796108691454
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,20 +19,25 @@ public class Ammo : MonoBehaviour
     {
         if (gameObject.CompareTag("Rocket"))
         {
-            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 5f);
+            Destroy(gameObject);
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, blastRadius);
             foreach (var hitCollider in hitColliders)
             {
                 if (hitCollider.CompareTag("Enemies"))
                 {
                     hitCollider.GetComponent<Enemies>().TakeDamage(damage);
+                    
                 }
             }
-            Destroy(gameObject);
+            
+
         }
         else if (collision.gameObject.CompareTag("Enemies"))
         {
+            
             collision.gameObject.GetComponent<Enemies>().TakeDamage(damage);
             Destroy(gameObject);
+            
         }
     }
 
