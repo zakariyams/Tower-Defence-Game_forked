@@ -313,6 +313,7 @@ MonoBehaviour:
   - {fileID: 1996055511}
   - {fileID: 1519325690}
   - {fileID: 2109180268}
+  currency: 0
 --- !u!4 &66829080
 Transform:
   m_ObjectHideFlags: 0
@@ -6404,6 +6405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anime: {fileID: 252184054}
+  currencyUI: {fileID: 470333456}
 --- !u!1 &282727032
 GameObject:
   m_ObjectHideFlags: 0

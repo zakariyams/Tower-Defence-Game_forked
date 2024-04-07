@@ -32,6 +32,8 @@ public class Enemies : MonoBehaviour
 
     [SerializeField] private Transform healthBar;
 
+    [SerializeField] private int worth = 50;
+
 
     private int pathIndex = 0;
     private Transform pathTarget;
@@ -109,6 +111,7 @@ public class Enemies : MonoBehaviour
         if (healthpercentage <= 0f)
         {
             Spawner.onEnemyDestroyed.Invoke();
+            LevelManager.main.IncreaseCurrency(worth);
             Destroy(gameObject);
             return;
         }

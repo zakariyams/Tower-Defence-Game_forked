@@ -10,20 +10,50 @@ public class LevelManager : MonoBehaviour
     public Transform StartPoint;
     public Transform[] Path;
 
+    public int currency;
+
+
     private void Awake()
     {
         main = this;
     }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
+    {
+        currency = 100;   
+    }
+
+    // Update is called once per frame
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void IncreaseCurrency(int money)
     {
-        
+        currency += money;
     }
+
+    public bool Spend(int money)
+    {
+        if (money > currency) {
+            Debug.Log("You're broke, get your money up!");
+            return false;
+        } else {
+            currency -= money;
+            return true;
+        }
+                
+        
+          
+        
+              
+
+
+    }
+
+
+
 }

@@ -9,6 +9,9 @@ public class Menus : MonoBehaviour
 
     [SerializeField] Animator anime;
 
+    [Header("References")]
+    [SerializeField] TextMeshProUGUI currencyUI;
+
     private bool isMenuOpen = true;
 
 
@@ -18,6 +21,12 @@ public class Menus : MonoBehaviour
         isMenuOpen = !isMenuOpen;
         anime.SetBool("MenuOpen", isMenuOpen);
     }  
+
+
+    private void OnGUI()
+    {
+        currencyUI.text = LevelManager.main.currency.ToString();
+    }
 
 
     // Start is called before the first frame update
