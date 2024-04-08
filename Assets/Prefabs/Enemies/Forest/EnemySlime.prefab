@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5180525714810731758}
   - component: {fileID: 1006947018181721471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 308511801140868639}
   - component: {fileID: 3044993239684986540}
   - component: {fileID: 3351039779162187693}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: EnemySlime
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -271,3 +271,4 @@ MonoBehaviour:
   health: 20
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 5180525714810731758}
+  worth: 50

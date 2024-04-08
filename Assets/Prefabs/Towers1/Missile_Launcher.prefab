@@ -216,9 +216,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+  timeUntilFire: 0
   range: 10
   bulletspeed: 15
   bps: 0.5
   bulletspawn: {fileID: 149202492522610572}
-  bullet: {fileID: 1750531571833185593, guid: c63a79b3a3e611d408c4c1533339c11c, type: 3}
+  bullet: {fileID: 7882723127902911141, guid: 7363ec26185374840860c72d226f21fb, type: 3}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4422779676827449021}
   - component: {fileID: 5365496522588275883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3944060727060727432}
   - component: {fileID: 5919111144175019099}
   - component: {fileID: 6341997825876832933}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: EnemyGoblin
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -271,3 +271,4 @@ MonoBehaviour:
   health: 100
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 4422779676827449021}
+  worth: 50

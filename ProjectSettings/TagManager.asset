@@ -5,21 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemies
-  - Towers
-  - Button
-  - Panel
-  - hit
   - Bullet
+  - Rocket
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - 
-  - 
   - Enemy
+  - 
+  - 
   - 
   - 
   - 
@@ -46,10 +43,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 3760884557
-    locked: 0
-  - name: Ground
-    uniqueID: 180110217
     locked: 0

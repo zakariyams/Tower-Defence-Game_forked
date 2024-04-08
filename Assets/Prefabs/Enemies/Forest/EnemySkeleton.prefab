@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1447933129963224850}
   - component: {fileID: 4653916463786811559}
   - component: {fileID: 1344988498748564481}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: EnemySkeleton
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -187,6 +187,7 @@ MonoBehaviour:
   health: 100
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 9203995122357112790}
+  worth: 50
 --- !u!1 &3332887340636854743
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9203995122357112790}
   - component: {fileID: 3329795845258799965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
