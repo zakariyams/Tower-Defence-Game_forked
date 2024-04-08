@@ -269,5 +269,7 @@ MonoBehaviour:
   rb: {fileID: 7457123328922787733}
   moveSpeed: 4
   health: 50
+  damageToMap: 10
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 8107755734450954276}
+  worth: 50

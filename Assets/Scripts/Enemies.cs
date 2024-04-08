@@ -27,6 +27,7 @@ public class Enemies : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float health;
+    [SerializeField] private int damageToMap;
     public Vector3 pivotOffset;
     private float curHealth;
 
@@ -34,16 +35,21 @@ public class Enemies : MonoBehaviour
 
     [SerializeField] private int worth = 50;
 
-
     private int pathIndex = 0;
     private Transform pathTarget;
 
+    private Transform[] path;
+
     protected void Awake()
     {
+        if (Random.Range(0, 2) == 0)
+            path = LevelManager.main.Path;
+        else
+            path = LevelManager.main.SecondPath;
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         color = healthBar.GetComponent<SpriteRenderer>();
         curHealth = health;
-
     }
 
     protected void AnimateSprite()
@@ -65,14 +71,15 @@ public class Enemies : MonoBehaviour
             pathIndex += 1;
             
 
-            if (pathIndex == LevelManager.main.Path.Length)
+            if (pathIndex == path.Length)
             {
+                LevelManager.main.ReduceHealth(damageToMap);
                 Spawner.onEnemyDestroyed.Invoke();
                 Destroy(gameObject);
                 return;
             }
 
-            pathTarget = LevelManager.main.Path[pathIndex];
+            pathTarget = path[pathIndex];
 
             Vector2 directionToNextPoint = (pathTarget.position - transform.position).normalized;
 
@@ -142,7 +149,4 @@ public class Enemies : MonoBehaviour
         curHealth -= damage;
         healthBar.transform.localScale = new Vector3(healthBar.localScale.x - (damage / health), 0.1f, 1f);
     }
-
-
-
 }

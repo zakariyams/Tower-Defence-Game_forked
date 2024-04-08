@@ -29,6 +29,13 @@ public class Menus : MonoBehaviour
     }
 
 
+    public void SetSelected()
+    {
+
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
