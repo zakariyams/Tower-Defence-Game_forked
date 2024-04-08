@@ -186,7 +186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
+  timeUntilFire: 0
   range: 3
   bulletspeed: 20
   bps: 5

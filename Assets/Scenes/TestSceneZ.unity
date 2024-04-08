@@ -326,7 +326,10 @@ MonoBehaviour:
   - {fileID: 1996055511}
   - {fileID: 1519325690}
   - {fileID: 2109180268}
+  SecondStartPoint: {fileID: 0}
+  SecondPath: []
   currency: 0
+  mapHealth: 0
 --- !u!4 &66829080
 Transform:
   m_ObjectHideFlags: 0
@@ -6402,6 +6405,10 @@ PrefabInstance:
     - target: {fileID: 4483946941938208422, guid: 4408f685c25120944bdde1ae971b7ced, type: 3}
       propertyPath: m_Name
       value: Cannon (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689265037777115918, guid: 4408f685c25120944bdde1ae971b7ced, type: 3}
+      propertyPath: enemy.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

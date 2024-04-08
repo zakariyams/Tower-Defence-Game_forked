@@ -222,4 +222,4 @@ MonoBehaviour:
   bulletspeed: 15
   bps: 0.5
   bulletspawn: {fileID: 149202492522610572}
-  bullet: {fileID: 7882723127902911141, guid: 7363ec26185374840860c72d226f21fb, type: 3}
+  bullet: {fileID: 1567915351513746748, guid: e8e0e9b76c7fbd84cbb30c654aed5bc9, type: 3}
