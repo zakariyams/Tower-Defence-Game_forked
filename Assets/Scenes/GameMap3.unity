@@ -555,6 +555,15 @@ MonoBehaviour:
   - {fileID: 1268464122}
   - {fileID: 2144052702}
   - {fileID: 2130834249}
+  SecondStartPoint: {fileID: 327727462}
+  SecondPath:
+  - {fileID: 1747339223}
+  - {fileID: 1751427671}
+  - {fileID: 701188298}
+  - {fileID: 473270387}
+  - {fileID: 2003291257}
+  - {fileID: 1806786189}
+  - {fileID: 1608792855}
   currency: 0
 --- !u!114 &847467735
 MonoBehaviour:

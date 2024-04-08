@@ -6,11 +6,8 @@ using UnityEngine.Events;
  // Spawner for mobs
 public class Spawner : MonoBehaviour
 {
-
     [Header("References")]
     [SerializeField] private GameObject[] enemyprefabs;
-
-
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
@@ -37,16 +34,19 @@ public class Spawner : MonoBehaviour
     {
         enemiesAlive--;
     }
+
     private void Start()
     {
         StartCoroutine(StartWave());
     }
+
     private IEnumerator StartWave()
     {
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
     }
+
     private void Update()
     {
         if (!isSpawning) return;
@@ -74,6 +74,7 @@ public class Spawner : MonoBehaviour
         currentWave++;
         StartCoroutine(StartWave());
     }
+
     private void SpawnEnemy()
     {
         // Choose a random index within the range of enemyprefabs array
@@ -86,13 +87,8 @@ public class Spawner : MonoBehaviour
         Instantiate(prefabToSpawn, LevelManager.main.StartPoint.position, Quaternion.identity);
     }
 
-
     private int EnemiesPerWave()
     {
         return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScalingFactor));
     }
 }
-
-
-
-

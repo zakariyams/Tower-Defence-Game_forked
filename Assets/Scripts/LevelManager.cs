@@ -10,8 +10,11 @@ public class LevelManager : MonoBehaviour
     public Transform StartPoint;
     public Transform[] Path;
 
-    public int currency;
+    [Header("Optional Path otherwise Leave Empty")]
+    public Transform SecondStartPoint;
+    public Transform[] SecondPath;
 
+    public int currency;
 
     private void Awake()
     {
@@ -22,6 +25,12 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         currency = 100;   
+
+        if (SecondStartPoint == null)
+        {
+            SecondStartPoint = StartPoint;
+            SecondPath = Path;
+        }
     }
 
     // Update is called once per frame
@@ -29,7 +38,6 @@ public class LevelManager : MonoBehaviour
     {
         
     }
-
 
     public void IncreaseCurrency(int money)
     {
@@ -45,15 +53,5 @@ public class LevelManager : MonoBehaviour
             currency -= money;
             return true;
         }
-                
-        
-          
-        
-              
-
-
     }
-
-
-
 }
