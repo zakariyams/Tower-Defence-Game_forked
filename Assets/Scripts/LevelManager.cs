@@ -16,6 +16,9 @@ public class LevelManager : MonoBehaviour
 
     public int currency;
 
+    [Header("Attributes")]
+    [SerializeField] private int mapHealth;
+
     private void Awake()
     {
         main = this;
@@ -36,7 +39,10 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
+        if (mapHealth <= 0)
+        {
+            // Here we go to the defeat screen.
+        }
     }
 
     public void IncreaseCurrency(int money)
@@ -46,12 +52,20 @@ public class LevelManager : MonoBehaviour
 
     public bool Spend(int money)
     {
-        if (money > currency) {
+        if (money > currency)
+        {
             Debug.Log("You're broke, get your money up!");
             return false;
-        } else {
+        } 
+        else
+        {
             currency -= money;
             return true;
         }
+    }
+
+    public void ReduceHealth(int damage)
+    {
+        mapHealth -= damage;
     }
 }
