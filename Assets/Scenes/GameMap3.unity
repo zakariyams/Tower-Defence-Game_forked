@@ -565,6 +565,7 @@ MonoBehaviour:
   - {fileID: 1806786189}
   - {fileID: 1608792855}
   currency: 0
+  mapHealth: 100
 --- !u!114 &847467735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8233,11 +8234,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 272368919032154924, guid: 8584defe5069acb43998a657f691b48e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.027164876
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 272368919032154924, guid: 8584defe5069acb43998a657f691b48e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.277043
+      value: 1.18
       objectReference: {fileID: 0}
     - target: {fileID: 272368919032154924, guid: 8584defe5069acb43998a657f691b48e, type: 3}
       propertyPath: m_LocalPosition.z

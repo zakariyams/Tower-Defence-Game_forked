@@ -162,6 +162,7 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 256
+  timeUntilFire: 0
   range: 5
   bulletspeed: 20
   bps: 1
@@ -179,6 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3723307902587610858}
   - component: {fileID: 5958382967839859648}
+  - component: {fileID: -6328386472811547156}
   m_Layer: 0
   m_Name: Cannon2
   m_TagString: Untagged
@@ -256,3 +258,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6328386472811547156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7568323696317199057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb597648af49114ab12d2383d84632d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy:
+    serializedVersion: 2
+    m_Bits: 64
+  timeUntilFire: 0
+  range: 5
+  bulletspeed: 20
+  bps: 0
+  bulletspawn: []
+  bullet: {fileID: 0}
