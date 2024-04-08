@@ -106,8 +106,8 @@ MonoBehaviour:
   Gun: {fileID: 7193458734221401475}
   range: 10
   GunShot: {fileID: 2381729236455429506}
-  bulletspeed: 15
-  bps: 0.5
+  bulletspeed: 10
+  bps: 0.3
   bulletspawn:
   - {fileID: 3755383090533879155}
   - {fileID: 5381673475932912624}
@@ -266,7 +266,7 @@ Transform:
   m_GameObject: {fileID: 3755383090533879155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4289999, y: 0.949, z: 0}
+  m_LocalPosition: {x: -0.392, y: 0.949, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -297,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 5381673475932912624}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.048999786, y: 0.93799996, z: 0}
+  m_LocalPosition: {x: -0.015, y: 0.932, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -415,7 +415,7 @@ Transform:
   m_GameObject: {fileID: 8584184684661521068}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36100006, y: 0.916, z: 0}
+  m_LocalPosition: {x: 0.389, y: 0.916, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
