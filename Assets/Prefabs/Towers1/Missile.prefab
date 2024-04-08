@@ -8,22 +8,14 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
-  - component: {fileID: 1817509998427503698}
-  - component: {fileID: -7064579994494017272}
-  - component: {fileID: -5330427472063735526}
-  - component: {fileID: 192141926220144498}
-  - component: {fileID: 6393252595061321128}
-=======
   - component: {fileID: 3454796761063037809}
   - component: {fileID: 1568911239455013340}
   - component: {fileID: 1674929290053583957}
   - component: {fileID: 1681597333580655474}
   - component: {fileID: 7518431111966837808}
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: Rocket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,60 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
---- !u!114 &-7064579994494017272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882723127902911141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f5d8c786d1a754b9acf792d360f5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
-  blastRadius: 1
---- !u!70 &-5330427472063735526
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882723127902911141}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.56, y: 1.01}
-  m_Direction: 0
---- !u!212 &192141926220144498
-=======
 --- !u!212 &1568911239455013340
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,33 +87,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
---- !u!50 &6393252595061321128
-Rigidbody2D:
-  serializedVersion: 4
-=======
 --- !u!70 &1674929290053583957
 CapsuleCollider2D:
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
-  m_GameObject: {fileID: 7882723127902911141}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-=======
   m_GameObject: {fileID: 1567915351513746748}
   m_Enabled: 1
   m_Density: 1
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -182,8 +103,6 @@ CapsuleCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
-=======
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -226,13 +145,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
-=======
 --- !u!114 &7518431111966837808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,4 +163,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   blastRadius: 1.5
->>>>>>> 5b45b60e232edf4823076a9cb1d536b4d2c11398:Assets/Prefabs/Towers1/Missile.prefab
