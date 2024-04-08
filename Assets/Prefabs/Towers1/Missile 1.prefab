@@ -8,19 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
   - component: {fileID: 1817509998427503698}
-  - component: {fileID: 192141926220144498}
-  - component: {fileID: -5330427472063735526}
-  - component: {fileID: -8541671312920400912}
-  - component: {fileID: 8907666660993643263}
-=======
-  - component: {fileID: 5243167787988641564}
-  - component: {fileID: 2109528598129177449}
-  - component: {fileID: 2044240822219895586}
-  - component: {fileID: 4810958663352080736}
   - component: {fileID: -7064579994494017272}
->>>>>>> d57b3df544abb09fcf261a7f9aebf2f3f0946fec:Assets/Prefabs/Towers1/Missile.prefab
+  - component: {fileID: -5330427472063735526}
+  - component: {fileID: 192141926220144498}
+  - component: {fileID: -8932122729552683285}
   m_Layer: 0
   m_Name: Missile 1
   m_TagString: Rocket
@@ -43,6 +35,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7064579994494017272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882723127902911141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f5d8c786d1a754b9acf792d360f5ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  blastRadius: 1.5
+--- !u!70 &-5330427472063735526
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7882723127902911141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.56, y: 1.01}
+  m_Direction: 0
 --- !u!212 &192141926220144498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95,43 +136,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &-5330427472063735526
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882723127902911141}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.56, y: 1.01}
-  m_Direction: 0
-<<<<<<< HEAD:Assets/Prefabs/Towers1/Missile 1.prefab
---- !u!50 &-8541671312920400912
+--- !u!50 &-8932122729552683285
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -158,20 +163,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &8907666660993643263
-=======
---- !u!114 &-7064579994494017272
->>>>>>> d57b3df544abb09fcf261a7f9aebf2f3f0946fec:Assets/Prefabs/Towers1/Missile.prefab
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7882723127902911141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29f5d8c786d1a754b9acf792d360f5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 100
-  blastRadius: 1
