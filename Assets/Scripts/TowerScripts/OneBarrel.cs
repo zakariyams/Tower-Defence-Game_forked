@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class GunFirstStage : Towers
+public class OneBarrel : Towers
 {
     [SerializeField] private float range = 5f;
     [SerializeField] private float bulletspeed = 20f;
@@ -13,6 +13,7 @@ public class GunFirstStage : Towers
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
     [SerializeField] private GameObject bullet;
+    [SerializeField] protected AudioSource GunShot;
 
 
 
@@ -30,8 +31,9 @@ public class GunFirstStage : Towers
         GameObject Firebullet = Instantiate(bullet, bulletspawn.transform.position, Quaternion.identity);
         Vector2 direction = (Target.transform.position - transform.position).normalized;
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
-
         BulletAngle(Firebullet, Target);
+        GunShot.Play();
+
         yield return new WaitForSeconds(1f);
         Destroy(Firebullet);
     }

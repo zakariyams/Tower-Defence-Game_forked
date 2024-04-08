@@ -4,20 +4,25 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class GunSecondStage : Towers
+public class MultipleBarrels : Towers
 {
-    [SerializeField] private float range;
-    [SerializeField] private float bulletspeed;
-    [SerializeField] private float bps;
-    [SerializeField] private GameObject[] bulletspawn;
-    [SerializeField] private GameObject bullet;
-    private GameObject target;
+    [SerializeField] protected float range;
+    [SerializeField] protected AudioSource GunShot;
+    [SerializeField] protected float bulletspeed;
+    [SerializeField] protected float bps;
+    [SerializeField] protected GameObject[] bulletspawn;
+    [SerializeField] protected GameObject bullet;
+    protected GameObject target;
     public override IEnumerator Fire()
     {
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
         BulletAngle(Firebullet, Target);
+        GunShot.Play();
+
         GameObject Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
         BulletAngle(Firebullet2, Target);
+        GunShot.Play();
+        
         Vector2 direction = (Target.transform.position - transform.position).normalized;
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
@@ -42,10 +47,11 @@ public class GunSecondStage : Towers
         GunUpdate();
     }
 
-    private void OnDrawGizmosSelected()
+    public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+
 
 }

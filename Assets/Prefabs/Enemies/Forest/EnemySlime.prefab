@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 308511801140868639}
   - component: {fileID: 3044993239684986540}
   - component: {fileID: 3351039779162187693}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: EnemySlime
   m_TagString: Enemies
   m_Icon: {fileID: 0}

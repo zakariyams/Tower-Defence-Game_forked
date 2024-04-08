@@ -5,13 +5,14 @@ using UnityEngine;
 
 public abstract class Towers : MonoBehaviour
 {
-    
     public float Range {  get; protected set; }
     public float Bulletspeed { get; protected set; }
     public float Bps {  get; protected set; }
     [SerializeField] private LayerMask enemy;
     public GameObject Target { get; protected set; }
     public float timeUntilFire;
+    private float rotationspeed = 10f;
+    [SerializeField] private GameObject Gun;
 
 
     // Finds the closest enemy and places it as the next target. RayCAstHit2D[] is an array of all objects that goes in the circle
@@ -61,8 +62,7 @@ public abstract class Towers : MonoBehaviour
             return;
         }
 
-        Vector2 direction = Target.gameObject.transform.position - transform.position;
-        transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+        RotateGun();
         timeUntilFire += Time.deltaTime;
 
         if (!CheckInRange())
@@ -74,6 +74,19 @@ public abstract class Towers : MonoBehaviour
             StartCoroutine(Fire());
             timeUntilFire = 0f;
         }
+    }
+
+    public void RotateGun()
+    {
+        if (Target == null)
+        {
+            return;
+        }
+
+        Vector2 direction = Target.gameObject.transform.position - transform.position;
+        Quaternion target = Quaternion.FromToRotation(Vector3.up, direction);
+        Gun.transform.rotation = Quaternion.Lerp(Gun.transform.rotation, target, Time.deltaTime * rotationspeed);
+
     }
 
 
