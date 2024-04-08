@@ -136,7 +136,7 @@ MonoBehaviour:
   timeUntilFire: 0
   range: 5
   bulletspeed: 20
-  bps: 1
+  bps: 5
   bulletspawn: {fileID: 2050063024905950572}
   bullet: {fileID: 918506522163829341, guid: 12957524a20efbb47b99b41021064207, type: 3}
 --- !u!1 &8936171796108691454

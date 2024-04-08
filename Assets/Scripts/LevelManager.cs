@@ -24,7 +24,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        currency = 100;   
+        currency = 200;   
 
         if (SecondStartPoint == null)
         {
