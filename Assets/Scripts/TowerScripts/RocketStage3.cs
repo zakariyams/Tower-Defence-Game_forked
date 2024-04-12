@@ -25,7 +25,7 @@ public class RocketStage3 : MultipleBarrels
 
             }
 
-            // Wait for 0.25 seconds between each shot, except after the last one
+            // Wait for 0.1 seconds between each shot, except after the last one
             if (i < bulletspawn.Length - 1)
             {
                 yield return new WaitForSeconds(0.1f);

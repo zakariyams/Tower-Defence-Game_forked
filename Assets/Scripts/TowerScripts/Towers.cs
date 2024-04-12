@@ -11,7 +11,7 @@ public abstract class Towers : MonoBehaviour
     [SerializeField] private LayerMask enemy;
     public GameObject Target { get; protected set; }
     public float timeUntilFire;
-    private float rotationspeed = 5f;
+    private float rotationspeed = 3f;
     [SerializeField] private GameObject Gun;
 
 
@@ -48,7 +48,7 @@ public abstract class Towers : MonoBehaviour
     
 
     // Fixes the angle of the bullet when firing 
-    public static void BulletAngle(GameObject bullet, GameObject target)
+    public void BulletAngle(GameObject bullet, GameObject target)
     {
         Vector2 offset = target.transform.position - bullet.transform.position;
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
@@ -71,7 +71,7 @@ public abstract class Towers : MonoBehaviour
             Target = null;
         }
         else if (timeUntilFire >= 1f / Bps && CheckInRange())
-        {
+        {;
             StartCoroutine(Fire());
             timeUntilFire = 0f;
         }
@@ -84,10 +84,12 @@ public abstract class Towers : MonoBehaviour
             return;
         }
 
-      
-        Vector2 direction = Target.gameObject.transform.position - transform.position;
-        Quaternion target = Quaternion.FromToRotation(Vector3.up, direction);
-        Gun.transform.rotation = Quaternion.Lerp(Gun.transform.rotation, target, Time.deltaTime * rotationspeed);
+        
+       Vector2 direction = Target.gameObject.transform.position - transform.position;
+       Quaternion target = Quaternion.FromToRotation(Vector3.up, direction);
+       Gun.transform.rotation = Quaternion.Lerp(Gun.transform.rotation, target, Time.deltaTime * rotationspeed);
+        
+        
 
     }
 
