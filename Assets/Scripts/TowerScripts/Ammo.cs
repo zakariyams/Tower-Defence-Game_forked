@@ -11,6 +11,7 @@ public class Ammo : MonoBehaviour
 
     public bool fortest;
 
+#if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
@@ -24,6 +25,7 @@ public class Ammo : MonoBehaviour
         }
 
     }
+#endif
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

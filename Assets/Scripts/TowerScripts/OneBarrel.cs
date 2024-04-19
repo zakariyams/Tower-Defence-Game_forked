@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -38,11 +37,13 @@ public class OneBarrel : Towers
         Destroy(Firebullet);
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+#endif
 
 
     protected override void Update()

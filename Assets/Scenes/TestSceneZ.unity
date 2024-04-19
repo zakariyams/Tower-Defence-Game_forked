@@ -329,7 +329,7 @@ MonoBehaviour:
   SecondStartPoint: {fileID: 0}
   SecondPath: []
   currency: 0
-  mapHealth: 0
+  mapHealth: 20
 --- !u!4 &66829080
 Transform:
   m_ObjectHideFlags: 0

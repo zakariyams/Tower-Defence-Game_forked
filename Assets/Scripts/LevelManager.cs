@@ -43,6 +43,11 @@ public class LevelManager : MonoBehaviour
         {
             // Here we go to the defeat screen.
         }
+
+        if (mapHealth <  0)
+        {
+            Application.Quit();
+        }
     }
 
     public void IncreaseCurrency(int money)

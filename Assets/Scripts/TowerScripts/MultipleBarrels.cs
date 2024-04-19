@@ -47,11 +47,13 @@ public class MultipleBarrels : Towers
         GunUpdate();
     }
 
+#if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+#endif
 
 
 }
