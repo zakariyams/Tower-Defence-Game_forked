@@ -1,6 +1,6 @@
 [![TEST](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/dotnet.yml/badge.svg)](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/dotnet.yml)
 
-
+[![dotnet package](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/.net-package.yml/badge.svg)](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/.net-package.yml)
 # Tower-Defence-Game
 
 # Software Development - Tower Defence Project
