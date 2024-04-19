@@ -26,3 +26,13 @@ jobs:
 
     - name: Display
       run: dotnet --version
+
+    - name: Build
+      run:   
+        cd Tower-Defence-Game-main
+        dotnet build --no-restore
+
+
+      
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
