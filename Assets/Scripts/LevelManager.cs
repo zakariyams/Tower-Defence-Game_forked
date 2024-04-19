@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     public int currency;
 
     [Header("Attributes")]
-    [SerializeField] private int mapHealth;
+    [SerializeField] public int mapHealth;
 
     private void Awake()
     {

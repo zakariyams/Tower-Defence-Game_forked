@@ -7,12 +7,22 @@ public class Ammo : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public float damage;
-    [SerializeField] private float blastRadius;
+    [SerializeField] public float blastRadius;
 
-    private void OnDrawGizmosSelected()
+    public bool fortest;
+
+    public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, blastRadius);
+
+        if (Handles.color == Color.red) 
+        {
+            fortest = true;
+        } else {
+            fortest = false;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

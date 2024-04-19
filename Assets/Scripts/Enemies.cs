@@ -26,14 +26,15 @@ public class Enemies : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private float moveSpeed;
-    [SerializeField] private float health;
+    [SerializeField] public float health;
     [SerializeField] private int damageToMap;
     public Vector3 pivotOffset;
-    private float curHealth;
+    public float curHealth;
 
-    [SerializeField] private Transform healthBar;
+    //Made this one public for testing
+    [SerializeField] public Transform healthBar;
 
-    [SerializeField] private int worth = 50;
+    [SerializeField] private int worth;
 
     private int pathIndex = 0;
     private Transform pathTarget;

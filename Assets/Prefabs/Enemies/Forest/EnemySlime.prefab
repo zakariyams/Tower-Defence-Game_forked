@@ -272,4 +272,4 @@ MonoBehaviour:
   damageToMap: 2
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 5180525714810731758}
-  worth: 50
+  worth: 10

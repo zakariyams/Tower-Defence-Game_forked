@@ -220,7 +220,7 @@ MonoBehaviour:
   damageToMap: 20
   pivotOffset: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 5429665720209351517}
-  worth: 50
+  worth: 200
 --- !u!212 &6956443231308836962
 SpriteRenderer:
   m_ObjectHideFlags: 0
