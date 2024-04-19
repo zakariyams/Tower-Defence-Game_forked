@@ -28,9 +28,9 @@ jobs:
       run: dotnet --version
 
     - name: Build
-      run:   
-        cd Tower-Defence-Game
-        dotnet build --no-restore
+      run:  |
+            cd Tower-Defence-Game 
+            dotnet build --no-restore
 
 
       
