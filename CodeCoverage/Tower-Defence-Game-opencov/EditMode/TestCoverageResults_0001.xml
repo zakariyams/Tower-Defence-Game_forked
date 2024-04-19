@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+  <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="3" numClasses="3" visitedMethods="3" numMethods="3" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="8" visitedSequencePoints="8" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="3" numClasses="3" visitedMethods="3" numMethods="3" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Script</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Build_manager.cs" />
+        <File uid="2" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Buttons.cs" />
+        <File uid="3" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Enemies.cs" />
+        <File uid="4" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/EnemyTest.cs" />
+        <File uid="5" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/LevelManager.cs" />
+        <File uid="6" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Menus.cs" />
+        <File uid="7" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Player.cs" />
+        <File uid="8" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/position_script.cs" />
+        <File uid="9" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Spawner.cs" />
+        <File uid="10" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/Test.cs" />
+        <File uid="11" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TestWorldEnemy.cs" />
+        <File uid="12" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TestWorldTower.cs" />
+        <File uid="13" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/Ammo.cs" />
+        <File uid="14" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/MultipleBarrels.cs" />
+        <File uid="15" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/OneBarrel.cs" />
+        <File uid="16" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/Towers.cs" />
+        <File uid="17" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/RocketStage3.cs" />
+        <File uid="18" fullPath="C:/Users/46700/Desktop/Tower-Defence-Game/Tower-Defence-Game/Assets/Scripts/TowerScripts/RocketStageTwo.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>BuildManager</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663302</MetadataToken>
+              <Name>BuildManager::BuildManager()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="531" ordinal="0" offset="0" sl="13" sc="5" el="13" ec="5" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Menus</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>Menus::Menus()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="689" ordinal="0" offset="0" sl="15" sc="5" el="15" ec="5" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Spawner</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="6" visitedSequencePoints="6" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663351</MetadataToken>
+              <Name>Spawner::Spawner()</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="770" ordinal="0" offset="0" sl="13" sc="22" el="13" ec="22" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="771" ordinal="0" offset="7" sl="14" sc="22" el="14" ec="22" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="772" ordinal="0" offset="18" sl="15" sc="22" el="15" ec="22" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="773" ordinal="0" offset="29" sl="16" sc="22" el="16" ec="22" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="774" ordinal="0" offset="40" sl="19" sc="22" el="19" ec="22" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="775" ordinal="0" offset="47" sl="23" sc="22" el="23" ec="22" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

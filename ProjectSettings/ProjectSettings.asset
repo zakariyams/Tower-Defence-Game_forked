@@ -597,7 +597,8 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: LEVELPLAY_DEPENDENCIES_INSTALLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -684,7 +685,8 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -704,11 +706,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a073f1c1-0875-4454-8652-f10ff681767f
+  cloudProjectId: 9cb1fc1c-0990-4e11-9ec3-2a8b57d3dc22
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tower Defence Game
-  organizationId: jakobloula
+  projectName: Tower Defence Game (1)
+  organizationId: zeruxe
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
