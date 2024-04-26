@@ -47,6 +47,7 @@ Once the game is finished and ready for release. A .exe file will be created and
 
 This section is empty for now. More information will be provided throughout the developement process. For futher information please review the "Rough compilation and running instructions# section.
 
+Added this line for pull request
 
 # Unit testing  
 
