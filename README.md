@@ -50,7 +50,6 @@ Once the game is finished and ready for release. A .exe file will be created and
 # Working compilation and running instructions
 This section is empty for now. More information will be provided throughout the developement process. For futher information please review the "Rough compilation and running instructions# section.
 
-Added this line for pull request
 
 # Unit testing  
 The easiest way to run unit test is by using the testrunner in Unity, select the tests you want to run and the testrunner will run all the tests for you as well as providing code coverage.  
