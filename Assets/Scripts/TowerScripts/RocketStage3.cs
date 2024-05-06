@@ -1,10 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class RocketStage3 : MultipleBarrels
+public class RocketStage3 : Towers
 {
-   
+    [SerializeField] protected float range;
+    [SerializeField] protected AudioSource GunShot;
+    [SerializeField] protected float bulletspeed;
+    [SerializeField] protected float bps;
+    [SerializeField] protected GameObject[] bulletspawn;
+    [SerializeField] protected GameObject bullet;
+    protected GameObject target;
+    public bool Responsive;
+
     public override IEnumerator Fire()
     {
         Vector2 direction = (Target.transform.position - transform.position).normalized;
@@ -43,4 +52,29 @@ public class RocketStage3 : MultipleBarrels
         }
         
     }
+
+
+    private void Awake()
+    {
+        Range = range;
+        Bulletspeed = bulletspeed;
+        Bps = bps;
+        Target = target;
+        Responsive = true;
+    }
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
+
+#if UNITY_EDITOR
+    public void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+        Handles.DrawWireDisc(transform.position, transform.forward, range);
+    }
+#endif
 }
