@@ -12,59 +12,32 @@ public class TowerTesting
     [UnityTest]
     public IEnumerator OneBarrel_ResponsiveTest()
     {
-        // Load a test scene
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-
-        // Arrange
         GameObject rocketObj = new GameObject();
         rocketObj.tag = "Bullet";
-
-        // Add required components
         OneBarrel rocketScript = rocketObj.AddComponent<OneBarrel>();
-
-        // Simulate collision using physics
-        yield return new WaitForSeconds(5f); // Wait for physics to update
-
-        // Assert
-        Assert.IsTrue(rocketScript.Responsive); // Assert that Fire method has been called
+        yield return new WaitForSeconds(5f); 
+        Assert.IsTrue(rocketScript.Responsive); 
     }
 
     [UnityTest]
     public IEnumerator MultipleBarrel_ResponsiveTest()
-    {
-        // Load a test scene
+    { 
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-
-        // Arrange
         GameObject rocketObj = new GameObject();
         rocketObj.tag = "Bullet";
-
-
-        // Add required components
         MultipleBarrels rocketScript = rocketObj.AddComponent<MultipleBarrels>();
-
-        // Simulate collision using physics
-        yield return new WaitForSeconds(5f); // Wait for physics to update
-
-        // Assert
-        Assert.IsTrue(rocketScript.Responsive); // Assert that Fire method has been called
+        yield return new WaitForSeconds(5f); 
+        Assert.IsTrue(rocketScript.Responsive); 
     }
 
     [UnityTest]
     public IEnumerator RocketStage2_ResponsiveTest()
     {
-        // Load a test scene
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-
-        // Arrange
         GameObject rocketObj = new GameObject();
-
-        // Add required components
         RocketStageTwo rocketScript = rocketObj.AddComponent<RocketStageTwo>();
-
-        // Simulate collision using physics
-        yield return new WaitForSeconds(5f); // Wait for physics to update
-        // Assert
+        yield return new WaitForSeconds(5f); 
         Assert.IsTrue(rocketScript.Responsive);
     }
 
