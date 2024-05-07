@@ -5,10 +5,11 @@ using UnityEngine;
 
 public abstract class Towers : MonoBehaviour
 {
-    public float Range {  get; protected set; }
+    public float Range {  get;  set; }
     public float Bulletspeed { get; protected set; }
     public float Bps {  get; protected set; }
     [SerializeField] private LayerMask enemy;
+    
     public GameObject Target { get; protected set; }
     public float timeUntilFire;
     private float rotationspeed = 3f;
@@ -71,10 +72,12 @@ public abstract class Towers : MonoBehaviour
             Target = null;
         }
         else if (timeUntilFire >= 1f / Bps && CheckInRange())
-        {;
+        {
             StartCoroutine(Fire());
             timeUntilFire = 0f;
         }
+
+        
     }
 
     public void RotateGun()

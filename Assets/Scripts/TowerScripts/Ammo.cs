@@ -27,7 +27,7 @@ public class Ammo : MonoBehaviour
     }
 #endif
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (gameObject.CompareTag("Rocket"))
         {

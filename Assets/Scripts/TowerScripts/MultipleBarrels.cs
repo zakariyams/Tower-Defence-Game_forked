@@ -13,6 +13,7 @@ public class MultipleBarrels : Towers
     [SerializeField] protected GameObject[] bulletspawn;
     [SerializeField] protected GameObject bullet;
     protected GameObject target;
+    public bool Responsive;
     public override IEnumerator Fire()
     {
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
@@ -39,12 +40,14 @@ public class MultipleBarrels : Towers
         Bulletspeed = bulletspeed;
         Bps = bps;
         Target = target;
+        Responsive = true;
     }
 
     // Update is called once per frame
     protected override void Update()
     {
         GunUpdate();
+
     }
 
 #if UNITY_EDITOR
