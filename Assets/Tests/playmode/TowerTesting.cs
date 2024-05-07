@@ -13,42 +13,40 @@ public class TowerTesting
     public IEnumerator OneBarrel_ResponsiveTest()
     {
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-        GameObject rocketObj = new GameObject();
-        rocketObj.tag = "Bullet";
-        OneBarrel rocketScript = rocketObj.AddComponent<OneBarrel>();
+        GameObject rocketObj = GameObject.Find("Tower (8)");
+        OneBarrel rocketScript = rocketObj.GetComponent<OneBarrel>();
         yield return new WaitForSeconds(5f); 
-        Assert.IsTrue(rocketScript.Responsive); 
+        Assert.IsNotNull(rocketScript.Target); 
     }
 
     [UnityTest]
     public IEnumerator MultipleBarrel_ResponsiveTest()
     { 
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-        GameObject rocketObj = new GameObject();
-        rocketObj.tag = "Bullet";
-        MultipleBarrels rocketScript = rocketObj.AddComponent<MultipleBarrels>();
+        GameObject rocketObj = GameObject.Find("Tower (2)");
+        MultipleBarrels rocketScript = rocketObj.GetComponent<MultipleBarrels>();
         yield return new WaitForSeconds(5f); 
-        Assert.IsTrue(rocketScript.Responsive); 
+        Assert.IsNotNull(rocketScript.Target); 
     }
 
     [UnityTest]
     public IEnumerator RocketStage2_ResponsiveTest()
     {
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-        GameObject rocketObj = new GameObject();
-        RocketStageTwo rocketScript = rocketObj.AddComponent<RocketStageTwo>();
+        GameObject rocketObj = GameObject.Find("Rocketlvl2");
+        RocketStageTwo rocketScript = rocketObj.GetComponent<RocketStageTwo>();
         yield return new WaitForSeconds(5f); 
-        Assert.IsTrue(rocketScript.Responsive);
+        Assert.IsNotNull(rocketScript.Target);
     }
 
     [UnityTest]
     public IEnumerator RocketStage3_ResponsiveTest()
     {
         yield return SceneManager.LoadSceneAsync("TestSceneJ");
-        GameObject rocketObj = new GameObject();
-        RocketStage3 rocketScript = rocketObj.AddComponent<RocketStage3>();
+        GameObject rocketObj = GameObject.Find("Rocketlvl3");
+        RocketStage3 rocketScript = rocketObj.GetComponent<RocketStage3>();
         yield return new WaitForSeconds(5f); 
-        Assert.IsTrue(rocketScript.Responsive); 
+        Assert.IsNotNull(rocketScript.Target); 
     }
 
 

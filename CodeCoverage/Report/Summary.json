@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedon": "2024-05-06T20:12:45Z",
+    "generatedon": "2024-05-07T09:43:40Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 2,
     "classes": 21,
     "files": 21,
-    "coveredlines": 327,
+    "coveredlines": 325,
     "uncoveredlines": 219,
-    "coverablelines": 546,
-    "totallines": 1278,
-    "linecoverage": 59.8,
+    "coverablelines": 544,
+    "totallines": 1249,
+    "linecoverage": 59.7,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 58,
@@ -22,11 +22,11 @@
         { "name": "Ammo", "coverage": 65.5, "coveredlines": 19, "coverablelines": 29, "totallines": 59, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
         { "name": "BuildManager", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 51, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
         { "name": "Buttons", "coverage": 0, "coveredlines": 0, "coverablelines": 4, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "Enemies", "coverage": 75.3, "coveredlines": 61, "coverablelines": 81, "totallines": 152, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 },
+        { "name": "Enemies", "coverage": 79, "coveredlines": 64, "coverablelines": 81, "totallines": 152, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 },
         { "name": "EnemyTest", "coverage": 0, "coveredlines": 0, "coverablelines": 28, "totallines": 53, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "LevelManager", "coverage": 82.8, "coveredlines": 29, "coverablelines": 35, "totallines": 76, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 6, "totalmethods": 6 },
         { "name": "Menus", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 50, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
-        { "name": "MultipleBarrels", "coverage": 85.7, "coveredlines": 24, "coverablelines": 28, "totallines": 62, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 75, "coveredmethods": 3, "totalmethods": 4 },
+        { "name": "MultipleBarrels", "coverage": 75, "coveredlines": 21, "coverablelines": 28, "totallines": 62, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 75, "coveredmethods": 3, "totalmethods": 4 },
         { "name": "OneBarrel", "coverage": 84.6, "coveredlines": 22, "coverablelines": 26, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 80, "coveredmethods": 4, "totalmethods": 5 },
         { "name": "position_script", "coverage": 0, "coveredlines": 0, "coverablelines": 24, "totallines": 65, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "RocketStage3", "coverage": 26.3, "coveredlines": 10, "coverablelines": 38, "totallines": 80, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 2, "totalmethods": 4 },
@@ -36,10 +36,10 @@
         { "name": "TestWorldEnemy", "coverage": 0, "coveredlines": 0, "coverablelines": 26, "totallines": 49, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "TestWorldTower", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "Towers", "coverage": 85.1, "coveredlines": 46, "coverablelines": 54, "totallines": 102, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 93.3, "coveredmethods": 14, "totalmethods": 15 } ] },
-      { "name": "Tests", "classes": 4, "coverage": 100, "coveredlines": 52, "coverablelines": 52, "totallines": 208, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7, "classesinassembly": [
+      { "name": "Tests", "classes": 4, "coverage": 100, "coveredlines": 50, "coverablelines": 50, "totallines": 179, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 7, "totalmethods": 7, "classesinassembly": [
         { "name": "Currency_test", "coverage": 100, "coveredlines": 7, "coverablelines": 7, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "firtst", "coverage": 100, "coveredlines": 8, "coverablelines": 8, "totallines": 44, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
         { "name": "Spend_test", "coverage": 100, "coveredlines": 7, "coverablelines": 7, "totallines": 43, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 1, "totalmethods": 1 },
-        { "name": "TowerTesting", "coverage": 100, "coveredlines": 30, "coverablelines": 30, "totallines": 84, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 } ] } ]
+        { "name": "TowerTesting", "coverage": 100, "coveredlines": 28, "coverablelines": 28, "totallines": 55, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 4, "totalmethods": 4 } ] } ]
   }
 }
