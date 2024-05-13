@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -11,7 +12,7 @@ public class MultipleBarrels : Towers
     [SerializeField] protected float bulletspeed;
     [SerializeField] protected float bps;
     [SerializeField] protected GameObject[] bulletspawn;
-    [SerializeField] protected GameObject bullet;
+    [SerializeField] public GameObject bullet;
     protected GameObject target;
     public bool Responsive;
     public override IEnumerator Fire()
@@ -50,6 +51,7 @@ public class MultipleBarrels : Towers
 
     }
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {

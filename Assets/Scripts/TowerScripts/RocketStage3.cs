@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class RocketStage3 : Towers
     [SerializeField] protected float bulletspeed;
     [SerializeField] protected float bps;
     [SerializeField] protected GameObject[] bulletspawn;
-    [SerializeField] protected GameObject bullet;
+    [SerializeField] public GameObject bullet;
     protected GameObject target;
     public bool Responsive;
 
@@ -70,6 +71,7 @@ public class RocketStage3 : Towers
 
     }
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -11,7 +12,7 @@ public class OneBarrel : Towers
     [SerializeField] private float bps = 1f;
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
-    [SerializeField] private GameObject bullet;
+    [SerializeField] public GameObject bullet;
     [SerializeField] protected AudioSource GunShot;
     public bool Responsive;
 
@@ -44,6 +45,7 @@ public class OneBarrel : Towers
         // Reset the flag after the bullet is destroyed
     }
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ public class RocketStageTwo : Towers
         BulletAngle(Firebullet, Target);
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         GunShot.Play();
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         GameObject Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
         BulletAngle(Firebullet2, Target);
         Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
@@ -50,6 +51,7 @@ public class RocketStageTwo : Towers
 
     }
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
