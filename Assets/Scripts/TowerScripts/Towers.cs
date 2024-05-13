@@ -12,7 +12,7 @@ public abstract class Towers : MonoBehaviour
     
     public GameObject Target { get; protected set; }
     public float timeUntilFire;
-    private float rotationspeed = 3f;
+    private float rotationspeed = 10f;
     [SerializeField] private GameObject Gun;
 
 
@@ -49,11 +49,9 @@ public abstract class Towers : MonoBehaviour
     
 
     // Fixes the angle of the bullet when firing 
-    public void BulletAngle(GameObject bullet, GameObject target)
+    public void BulletAngle(GameObject bullet)
     {
-        Vector2 offset = target.transform.position - bullet.transform.position;
-        float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
+        bullet.transform.rotation = Gun.transform.rotation;
     }
 
     protected void GunUpdate()

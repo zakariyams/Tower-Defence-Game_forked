@@ -14,7 +14,6 @@ public class OneBarrel : Towers
     [SerializeField] private GameObject bulletspawn;
     [SerializeField] public GameObject bullet;
     [SerializeField] protected AudioSource GunShot;
-    public bool Responsive;
 
     private void Awake()
     {
@@ -22,7 +21,6 @@ public class OneBarrel : Towers
         Bulletspeed = bulletspeed;
         Bps = bps;
         Target = target;
-        Responsive = true;
     }
 
 
@@ -34,7 +32,7 @@ public class OneBarrel : Towers
         GameObject firebullet = Instantiate(bullet, bulletspawn.transform.position, Quaternion.identity);
         Vector2 direction = (Target.transform.position - transform.position).normalized;
         firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
-        BulletAngle(firebullet, Target);
+        BulletAngle(firebullet);
         GunShot.Play();
 
 

@@ -19,16 +19,23 @@ public class RocketStageTwo : Towers
     public override IEnumerator Fire()
     {
         Vector2 direction = (Target.transform.position - transform.position).normalized;
-        
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet, Target);
+        GameObject Firebullet2 = null;
+        
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
+        BulletAngle(Firebullet);
         GunShot.Play();
-        yield return new WaitForSeconds(0.5f);
-        GameObject Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet2, Target);
-        Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
-        GunShot.Play();
+        yield return new WaitForSeconds(0.75f);
+
+        if (Target != null)
+        {
+            direction = (Target.transform.position - transform.position).normalized;
+            Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
+            BulletAngle(Firebullet2);
+            Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
+            GunShot.Play();
+        }
+
         yield return new WaitForSeconds(2f);
         Destroy(Firebullet);
         Destroy(Firebullet2);

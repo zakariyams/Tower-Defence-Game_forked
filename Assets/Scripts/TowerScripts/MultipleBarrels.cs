@@ -18,11 +18,11 @@ public class MultipleBarrels : Towers
     public override IEnumerator Fire()
     {
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet, Target);
+        BulletAngle(Firebullet);
         GunShot.Play();
 
         GameObject Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet2, Target);
+        BulletAngle(Firebullet2);
         GunShot.Play();
         
         Vector2 direction = (Target.transform.position - transform.position).normalized;

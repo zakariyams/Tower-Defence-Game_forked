@@ -234,12 +234,15 @@ MonoBehaviour:
   Gun: {fileID: 6712730152475052378}
   range: 10
   GunShot: {fileID: 442705083988912481}
-  bulletspeed: 20
+  bulletspeed: 30
   bps: 0.5
   bulletspawn:
   - {fileID: 1604348301256487679}
   - {fileID: 7300898170906010987}
   bullet: {fileID: 1567915351513746748, guid: e8e0e9b76c7fbd84cbb30c654aed5bc9, type: 3}
+  target: {fileID: 0}
+  Responsive: 0
+  Bulletspawned: 0
 --- !u!1 &1604348301256487679
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 1604348301256487679}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.274, y: 0.956, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -382,7 +385,7 @@ Transform:
   m_GameObject: {fileID: 7300898170906010987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.302, y: 0.951, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

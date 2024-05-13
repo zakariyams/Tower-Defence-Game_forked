@@ -53,7 +53,15 @@ public class TowerTesting
         Assert.IsNotNull(rocketScript.Target); 
     }
 
-
+    [UnityTest]
+    public IEnumerator NoResponseTest()
+    {
+        yield return SceneManager.LoadSceneAsync("TestSceneJ");
+        GameObject rocketObj = GameObject.Find("Rocketlvl2");
+        RocketStageTwo rocketScript = rocketObj.GetComponent<RocketStageTwo>();
+        yield return new WaitForSeconds(3f);
+        Assert.IsNull(rocketScript.Target);
+    }
 
 
 }
