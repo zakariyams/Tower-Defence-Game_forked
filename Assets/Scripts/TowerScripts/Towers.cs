@@ -5,13 +5,14 @@ using UnityEngine;
 
 public abstract class Towers : MonoBehaviour
 {
-    public float Range {  get; protected set; }
+    public float Range {  get;  set; }
     public float Bulletspeed { get; protected set; }
     public float Bps {  get; protected set; }
     [SerializeField] private LayerMask enemy;
+    
     public GameObject Target { get; protected set; }
     public float timeUntilFire;
-    private float rotationspeed = 3f;
+    private float rotationspeed = 10f;
     [SerializeField] private GameObject Gun;
 
 
@@ -48,11 +49,9 @@ public abstract class Towers : MonoBehaviour
     
 
     // Fixes the angle of the bullet when firing 
-    public void BulletAngle(GameObject bullet, GameObject target)
+    public void BulletAngle(GameObject bullet)
     {
-        Vector2 offset = target.transform.position - bullet.transform.position;
-        float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        bullet.transform.rotation = Quaternion.Euler(0f, 0f, angle - 90);
+        bullet.transform.rotation = Gun.transform.rotation;
     }
 
     protected void GunUpdate()
@@ -71,10 +70,12 @@ public abstract class Towers : MonoBehaviour
             Target = null;
         }
         else if (timeUntilFire >= 1f / Bps && CheckInRange())
-        {;
+        {
             StartCoroutine(Fire());
             timeUntilFire = 0f;
         }
+
+        
     }
 
     public void RotateGun()

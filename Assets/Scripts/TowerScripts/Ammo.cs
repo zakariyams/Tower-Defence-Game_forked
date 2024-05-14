@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class Ammo : MonoBehaviour
 
     public bool fortest;
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
@@ -27,7 +29,7 @@ public class Ammo : MonoBehaviour
     }
 #endif
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (gameObject.CompareTag("Rocket"))
         {
