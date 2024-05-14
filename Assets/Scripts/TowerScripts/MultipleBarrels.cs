@@ -51,14 +51,10 @@ public class MultipleBarrels : Towers
 
     }
 
-    [ExcludeFromCodeCoverage]
-#if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
-#endif
-
 
 }
