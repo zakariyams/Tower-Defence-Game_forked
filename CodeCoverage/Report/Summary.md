@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2024-05-14 - 21:36:21 |
+| Generated on: | 2024-05-14 - 21:57:01 |
 | Parser: | MultiReportParser (4x OpenCoverParser) |
 | Assemblies: | 2 |
 | Classes: | 22 |
 | Files: | 44 |
-| Covered lines: | 837 |
-| Uncovered lines: | 293 |
+| Covered lines: | 846 |
+| Uncovered lines: | 284 |
 | Coverable lines: | 1130 |
 | Total lines: | 1332 |
-| Line coverage: | 74% (837 of 1130) |
+| Line coverage: | 74.8% (846 of 1130) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 125 |
+| Covered methods: | 126 |
 | Total methods: | 190 |
-| Method coverage: | 65.7% (125 of 190) |
+| Method coverage: | 66.3% (126 of 190) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**Script**|**647**|**293**|**940**|**1087**|**68.8%**|**0**|**0**|****|**105**|**170**|**61.7%**|
+|**Script**|**656**|**284**|**940**|**1087**|**69.7%**|**0**|**0**|****|**106**|**170**|**62.3%**|
 |Ammo|38|0|38|61|100%|0|0||2|2|100%|
 |BuildManager|0|28|28|51|0%|0|0||0|12|0%|
 |Buttons|0|8|8|18|0%|0|0||0|4|0%|
@@ -32,7 +32,7 @@
 |position_script|0|48|48|65|0%|0|0||0|10|0%|
 |RocketStage3|68|0|68|85|100%|0|0||6|6|100%|
 |RocketStageTwo|62|0|62|72|100%|0|0||8|8|100%|
-|Spawner|91|9|100|94|91%|0|0||19|20|95%|
+|Spawner|100|0|100|94|100%|0|0||20|20|100%|
 |Test|0|12|12|14|0%|0|0||0|2|0%|
 |TestWorldEnemy|0|52|52|49|0%|0|0||0|10|0%|
 |TestWorldTower|0|14|14|19|0%|0|0||0|2|0%|

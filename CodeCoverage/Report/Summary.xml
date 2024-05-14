@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>2024-05-14 - 21:36:21</Generatedon>
+    <Generatedon>2024-05-14 - 21:57:01</Generatedon>
     <Parser>MultiReportParser (4x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
     <Classes>22</Classes>
     <Files>44</Files>
-    <Coveredlines>837</Coveredlines>
-    <Uncoveredlines>293</Uncoveredlines>
+    <Coveredlines>846</Coveredlines>
+    <Uncoveredlines>284</Uncoveredlines>
     <Coverablelines>1130</Coverablelines>
     <Totallines>1332</Totallines>
-    <Linecoverage>74</Linecoverage>
+    <Linecoverage>74.8</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>125</Coveredmethods>
+    <Coveredmethods>126</Coveredmethods>
     <Totalmethods>190</Totalmethods>
-    <Methodcoverage>65.7</Methodcoverage>
+    <Methodcoverage>66.3</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Script" classes="17" coverage="68.8" coveredlines="647" coverablelines="940" totallines="1087" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="105" totalmethods="170" methodcoverage="61.7">
+    <Assembly name="Script" classes="17" coverage="69.7" coveredlines="656" coverablelines="940" totallines="1087" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="106" totalmethods="170" methodcoverage="62.3">
       <Class name="Ammo" coverage="100" coveredlines="38" coverablelines="38" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="BuildManager" coverage="0" coveredlines="0" coverablelines="28" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
       <Class name="Buttons" coverage="0" coveredlines="0" coverablelines="8" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
@@ -31,7 +31,7 @@
       <Class name="position_script" coverage="0" coveredlines="0" coverablelines="48" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="RocketStage3" coverage="100" coveredlines="68" coverablelines="68" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
       <Class name="RocketStageTwo" coverage="100" coveredlines="62" coverablelines="62" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
-      <Class name="Spawner" coverage="91" coveredlines="91" coverablelines="100" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="19" totalmethods="20" methodcoverage="95" />
+      <Class name="Spawner" coverage="100" coveredlines="100" coverablelines="100" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="20" methodcoverage="100" />
       <Class name="Test" coverage="0" coveredlines="0" coverablelines="12" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
       <Class name="TestWorldEnemy" coverage="0" coveredlines="0" coverablelines="52" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
       <Class name="TestWorldTower" coverage="0" coveredlines="0" coverablelines="14" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
