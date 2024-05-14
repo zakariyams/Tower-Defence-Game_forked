@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class RocketStage3 : Towers
     [SerializeField] protected float bulletspeed;
     [SerializeField] protected float bps;
     [SerializeField] protected GameObject[] bulletspawn;
-    [SerializeField] protected GameObject bullet;
+    [SerializeField] public GameObject bullet;
     protected GameObject target;
     public bool Responsive;
 
@@ -27,7 +28,7 @@ public class RocketStage3 : Towers
             if (Target != null)
             {
                 GameObject fireBullet = Instantiate(bullet, bulletspawn[i].transform.position, Quaternion.identity);
-                BulletAngle(fireBullet, Target);
+                BulletAngle(fireBullet);
                 fireBullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
                 GunShot.Play();
                 firedBullets.Add(fireBullet);
@@ -37,7 +38,7 @@ public class RocketStage3 : Towers
             // Wait for 0.1 seconds between each shot, except after the last one
             if (i < bulletspawn.Length - 1)
             {
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.75f);
             }
         }
 
@@ -70,6 +71,7 @@ public class RocketStage3 : Towers
 
     }
 
+    [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
