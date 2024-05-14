@@ -55,3 +55,7 @@ Unity.exe -runTests -batchmode -projectpath path/to/my/project -testResults /tes
 This will generate files presenting the results of the unit tests that was run as well as providing code coverage  
 For more information please read the official unity documentation: https://docs.unity3d.com/Packages/com.unity.test-framework@1.1/manual/reference-command-line.html  
 
+
+
+
+h
