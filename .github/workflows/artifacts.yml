@@ -1,0 +1,14 @@
+name : Upload artifacts
+on : push
+jobs:
+  build-project:
+  name: Artifacts
+  runs-on: ubuntu-latest
+  steps:
+  - name: Upload exe file
+  uses: actions/upload-artifact@v4
+  with:
+    name: myartifact
+    path: exe/Tower Defence Game.exe
+    
+  
