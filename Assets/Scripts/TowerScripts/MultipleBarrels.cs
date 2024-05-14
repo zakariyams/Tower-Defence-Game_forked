@@ -44,17 +44,22 @@ public class MultipleBarrels : Towers
         Responsive = true;
     }
 
+    [ExcludeFromCodeCoverage]
+#if UNITY_EDITOR
+    public void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+        Handles.DrawWireDisc(transform.position, transform.forward, range);
+    }
+#endif
+
+
+
     // Update is called once per frame
     protected override void Update()
     {
         GunUpdate();
 
-    }
-
-    public void OnDrawGizmosSelected()
-    {
-        Handles.color = Color.red;
-        Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
 
 }
