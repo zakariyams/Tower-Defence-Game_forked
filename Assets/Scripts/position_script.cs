@@ -10,8 +10,11 @@ public class position_script : MonoBehaviour
     [SerializeField] private SpriteRenderer spriterend;
     [SerializeField] private Color hovcolour;
 
-    private GameObject tower;
+    //private GameObject tower;
+    public GameObject tower;
     private Color startcolour;
+    //This variabe will only be used for testing
+    //public GameObject mocktower;
 
 
 
@@ -33,20 +36,41 @@ public class position_script : MonoBehaviour
     }
 
 
+
+    public void SetSpriteRenderer(SpriteRenderer spriteRenderer)
+    {
+        spriterend = spriteRenderer;
+    }
+
+    public void SetHoverColor(Color color)
+    {
+        hovcolour = color;
+    }
+
+
+
+
+
     private void OnMouseExit()
     {
         spriterend.color = startcolour;
     }
 
-    private void OnMouseDown()
+    //Changed from private to public to make it accesable for tests/Z
+    public void OnMouseDown()
     {
-        Debug.Log(" " + name);
+        //Debug.Log(" " + name);
 
-        if (tower != null )
+        Debug.Log("Runs5");
+
+
+
+        if (tower != null)
         {
             return;
         }
-
+        
+        Debug.Log("Runs6");
         GameObject buildtower = BuildManager.main.GetTower();
 
         if (LevelManager.main.currency < 150)
@@ -57,9 +81,36 @@ public class position_script : MonoBehaviour
 
         LevelManager.main.Spend(150);
 
+        Debug.Log("Bip");
 
-        tower = Instantiate(buildtower, transform.position, Quaternion.identity);
+        Debug.Log("Still running");
 
+        if (buildtower == null)
+        {
+            Debug.Log("bu");
+        }
+
+        if (tower == null)
+        {
+            Debug.Log("t");
+        }
+    
+        Debug.Log("ok");
+        
+
+        try {
+            //tower = Instantiate(buildtower, transform.position, Quaternion.identity);
+            Instantiate(buildtower, transform.position, Quaternion.identity);
+            tower = buildtower;
+            Debug.Log("Instantiate");
+         }
+        //tower = Instantiate(buildtower, transform.position, Quaternion.identity);
+        catch(System.Exception e) {
+            Debug.LogError("Error during instantiation: " + e.Message);
+        }
+        Debug.Log("Bop");
+
+        
     }
 
 }

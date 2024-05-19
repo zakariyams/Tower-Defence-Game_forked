@@ -361,6 +361,7 @@ MonoBehaviour:
   - {fileID: 1550776007607802663, guid: 6fec0e6d5a04c384baeabd9f4ee7ff4f, type: 3}
   - {fileID: 1196244832981874949, guid: f7a424c91d5518f46b2c7332791c9b7f, type: 3}
   - {fileID: 2724592980527781250, guid: 682418b77df485a448755bd4f36e7898, type: 3}
+  selectedTower: 0
 --- !u!1 &67999600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6191487781671203649, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -385,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 67999604}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &67999604 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -547,6 +549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 161582372}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!1 &168090573
 GameObject:
   m_ObjectHideFlags: 0
@@ -6832,6 +6835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 347784759}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!1001 &352101387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7513,6 +7517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 731918328}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &731918328 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -7542,6 +7547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 788058840}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &788058840 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -7885,6 +7891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1239826286}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!1 &1260106162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,6 +8058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1318592854}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!1 &1423861804
 GameObject:
   m_ObjectHideFlags: 0
@@ -9528,11 +9536,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1506176253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb4b5379b8c07741a60cd5cc71d098c, type: 3}
+  m_Script: {fileID: 11500000, guid: c377d84c19003de4d815127e7aacea19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1506176256}
-  hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  hovcolour: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 0}
+  tower: {fileID: 1506176253}
 --- !u!1 &1519325689
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,6 +9762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1578533433}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &1578533433 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -10140,6 +10150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1748382475}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &1748382475 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -10200,6 +10211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 1885684868}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &1885684868 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -10588,6 +10600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 2000238881}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!1 &2005891369 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6191487781671203649, guid: 0662faae29eee1441b744d565cb32022, type: 3}
@@ -10612,6 +10625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriterend: {fileID: 2005891373}
   hovcolour: {r: 0.7607843, g: 0, b: 0.09019608, a: 0.89411765}
+  tower: {fileID: 0}
 --- !u!212 &2005891373 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 2539983229555646103, guid: 0662faae29eee1441b744d565cb32022, type: 3}
