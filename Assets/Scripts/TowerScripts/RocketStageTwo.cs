@@ -21,7 +21,7 @@ public class RocketStageTwo : Towers
         Vector2 direction = (Target.transform.position - transform.position).normalized;
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
         GameObject Firebullet2 = null;
-        
+
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         BulletAngle(Firebullet);
         GunShot.Play();
@@ -51,13 +51,8 @@ public class RocketStageTwo : Towers
         Responsive = true;
     }
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        GunUpdate();
 
-    }
-
+    //NO codecoverage
     [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
@@ -68,5 +63,13 @@ public class RocketStageTwo : Towers
 #endif
 
 
+
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
 
 }
