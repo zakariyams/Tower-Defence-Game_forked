@@ -51,6 +51,12 @@ public class RocketStageTwo : Towers
         Responsive = true;
     }
 
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
 
     [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
@@ -62,11 +68,5 @@ public class RocketStageTwo : Towers
 #endif
 
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        GunUpdate();
-
-    }
 
 }

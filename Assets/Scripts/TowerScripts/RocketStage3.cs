@@ -64,6 +64,12 @@ public class RocketStage3 : Towers
         Responsive = true;
     }
 
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
 
     [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
@@ -73,13 +79,4 @@ public class RocketStage3 : Towers
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
 #endif
-
-
-    // Update is called once per frame
-    protected override void Update()
-    {
-        GunUpdate();
-
-    }
-
 }
