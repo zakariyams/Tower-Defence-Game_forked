@@ -44,13 +44,13 @@ public class OneBarrel : Towers
     }
 
     [ExcludeFromCodeCoverage]
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
-#endif
+    #endif
 
 
     protected override void Update()

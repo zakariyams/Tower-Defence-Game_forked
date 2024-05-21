@@ -44,13 +44,6 @@ public class MultipleBarrels : Towers
         Responsive = true;
     }
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        GunUpdate();
-
-    }
-
     [ExcludeFromCodeCoverage]
 #if UNITY_EDITOR
     public void OnDrawGizmosSelected()
@@ -60,5 +53,13 @@ public class MultipleBarrels : Towers
     }
 #endif
 
+
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
 
 }

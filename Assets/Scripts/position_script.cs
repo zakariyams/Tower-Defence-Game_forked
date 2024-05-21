@@ -10,7 +10,7 @@ public class position_script : MonoBehaviour
     [SerializeField] private SpriteRenderer spriterend;
     [SerializeField] private Color hovcolour;
 
-    private GameObject tower;
+    public GameObject tower;
     private Color startcolour;
 
 
@@ -38,7 +38,7 @@ public class position_script : MonoBehaviour
         spriterend.color = startcolour;
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         Debug.Log(" " + name);
 
