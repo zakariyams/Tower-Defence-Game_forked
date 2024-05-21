@@ -1,4 +1,6 @@
-[![TEST](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/dotnet.yml/badge.svg)](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/dotnet.yml)
+[![Build](https://github.com/zakariyams/Tower-Defence-Game_forked/actions/workflows/build.yml/badge.svg)](https://github.com/zakariyams/Tower-Defence-Game_forked/actions/workflows/build.yml)
+
+[![Test](https://github.com/zakariyams/Tower-Defence-Game_forked/actions/workflows/testing.yml/badge.svg)](https://github.com/zakariyams/Tower-Defence-Game_forked/actions/workflows/testing.yml)
 
 [![dotnet package](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/.net-package.yml/badge.svg)](https://github.com/AdeptiC/Tower-Defence-Game/actions/workflows/.net-package.yml)
 # Tower-Defence-Game
@@ -54,4 +56,6 @@ It is also possible to run the tests from the command line like this:
 Unity.exe -runTests -batchmode -projectpath path/to/my/project -testResults /test/results.xml -testplatform playmode -enableCodeCoverage -coverageResultsPath /coverage/results -coverageHistoryPath /coverage/history  
 This will generate files presenting the results of the unit tests that was run as well as providing code coverage  
 For more information please read the official unity documentation: https://docs.unity3d.com/Packages/com.unity.test-framework@1.1/manual/reference-command-line.html  
+
+
 

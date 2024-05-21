@@ -1,48 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>2024-05-13 - 16:17:50</Generatedon>
-    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
+    <Generatedon>2024-05-20 - 08:58:02</Generatedon>
+    <Parser>MultiReportParser (4x OpenCoverParser)</Parser>
     <Assemblies>2</Assemblies>
-    <Classes>22</Classes>
-    <Files>22</Files>
-    <Coveredlines>423</Coveredlines>
-    <Uncoveredlines>142</Uncoveredlines>
-    <Coverablelines>565</Coverablelines>
-    <Totallines>1328</Totallines>
-    <Linecoverage>74.8</Linecoverage>
+    <Classes>25</Classes>
+    <Files>47</Files>
+    <Coveredlines>743</Coveredlines>
+    <Uncoveredlines>498</Uncoveredlines>
+    <Coverablelines>1241</Coverablelines>
+    <Totallines>1728</Totallines>
+    <Linecoverage>59.8</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>63</Coveredmethods>
-    <Totalmethods>95</Totalmethods>
-    <Methodcoverage>66.3</Methodcoverage>
+    <Coveredmethods>118</Coveredmethods>
+    <Totalmethods>203</Totalmethods>
+    <Methodcoverage>58.1</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Script" classes="17" coverage="69.7" coveredlines="328" coverablelines="470" totallines="1083" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="53" totalmethods="85" methodcoverage="62.3">
-      <Class name="Ammo" coverage="100" coveredlines="19" coverablelines="19" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="BuildManager" coverage="0" coveredlines="0" coverablelines="14" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
-      <Class name="Buttons" coverage="0" coveredlines="0" coverablelines="4" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="Enemies" coverage="93.8" coveredlines="76" coverablelines="81" totallines="152" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
-      <Class name="EnemyTest" coverage="0" coveredlines="0" coverablelines="28" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="LevelManager" coverage="82.8" coveredlines="29" coverablelines="35" totallines="76" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
-      <Class name="Menus" coverage="0" coveredlines="0" coverablelines="14" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
-      <Class name="MultipleBarrels" coverage="100" coveredlines="24" coverablelines="24" totallines="64" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
-      <Class name="OneBarrel" coverage="100" coveredlines="21" coverablelines="21" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
-      <Class name="position_script" coverage="0" coveredlines="0" coverablelines="24" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="RocketStage3" coverage="100" coveredlines="34" coverablelines="34" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
-      <Class name="RocketStageTwo" coverage="100" coveredlines="31" coverablelines="31" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
-      <Class name="Spawner" coverage="100" coveredlines="50" coverablelines="50" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100" />
-      <Class name="Test" coverage="0" coveredlines="0" coverablelines="6" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="TestWorldEnemy" coverage="0" coveredlines="0" coverablelines="26" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="TestWorldTower" coverage="0" coveredlines="0" coverablelines="7" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
-      <Class name="Towers" coverage="84.6" coveredlines="44" coverablelines="52" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="15" methodcoverage="93.3" />
+    <Assembly name="Script" classes="18" coverage="59.2" coveredlines="609" coverablelines="1028" totallines="1278" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="103" totalmethods="181" methodcoverage="56.9">
+      <Class name="Ammo" coverage="100" coveredlines="38" coverablelines="38" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="BuildManager" coverage="0" coveredlines="0" coverablelines="43" totallines="75" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="14" methodcoverage="0" />
+      <Class name="Buttons" coverage="0" coveredlines="0" coverablelines="8" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="Enemies" coverage="86.4" coveredlines="140" coverablelines="162" totallines="152" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="16" totalmethods="16" methodcoverage="100" />
+      <Class name="EnemyTest" coverage="0" coveredlines="0" coverablelines="56" totallines="53" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
+      <Class name="LevelManager" coverage="61.4" coveredlines="43" coverablelines="70" totallines="76" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="12" methodcoverage="83.3" />
+      <Class name="Menus" coverage="0" coveredlines="0" coverablelines="28" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
+      <Class name="MultipleBarrels" coverage="100" coveredlines="48" coverablelines="48" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="OneBarrel" coverage="95.2" coveredlines="40" coverablelines="42" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
+      <Class name="position_script" coverage="0" coveredlines="0" coverablelines="74" totallines="116" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="12" methodcoverage="0" />
+      <Class name="position_script_mock" coverage="0" coveredlines="0" coverablelines="47" totallines="116" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="7" methodcoverage="0" />
+      <Class name="RocketStage3" coverage="91.1" coveredlines="62" coverablelines="68" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="RocketStageTwo" coverage="95.1" coveredlines="59" coverablelines="62" totallines="72" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
+      <Class name="Spawner" coverage="91" coveredlines="91" coverablelines="100" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="19" totalmethods="20" methodcoverage="95" />
+      <Class name="Test" coverage="0" coveredlines="0" coverablelines="12" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="TestWorldEnemy" coverage="0" coveredlines="0" coverablelines="52" totallines="49" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="10" methodcoverage="0" />
+      <Class name="TestWorldTower" coverage="0" coveredlines="0" coverablelines="14" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="Towers" coverage="84.6" coveredlines="88" coverablelines="104" totallines="100" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="28" totalmethods="30" methodcoverage="93.3" />
     </Assembly>
-    <Assembly name="Tests" classes="5" coverage="100" coveredlines="95" coverablelines="95" totallines="245" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100">
-      <Class name="Bullet_Test" coverage="100" coveredlines="34" coverablelines="34" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
-      <Class name="Currency_test" coverage="100" coveredlines="7" coverablelines="7" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="firtst" coverage="100" coveredlines="8" coverablelines="8" totallines="44" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="Spend_test" coverage="100" coveredlines="7" coverablelines="7" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="TowerTesting" coverage="100" coveredlines="39" coverablelines="39" totallines="67" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
+    <Assembly name="Tests" classes="7" coverage="62.9" coveredlines="134" coverablelines="213" totallines="450" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="15" totalmethods="22" methodcoverage="68.1">
+      <Class name="Bullet_Test" coverage="50" coveredlines="34" coverablelines="68" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
+      <Class name="Currency_test" coverage="50" coveredlines="7" coverablelines="14" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="firtst" coverage="50" coveredlines="8" coverablelines="16" totallines="44" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="health_decrease_test" coverage="0" coveredlines="0" coverablelines="10" totallines="104" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
+      <Class name="Spend_test" coverage="50" coveredlines="7" coverablelines="14" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+      <Class name="tower_instantiate_test" coverage="0" coveredlines="0" coverablelines="13" totallines="101" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
+      <Class name="TowerTesting" coverage="100" coveredlines="78" coverablelines="78" totallines="67" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100" />
     </Assembly>
   </Coverage>
 </CoverageReport>
