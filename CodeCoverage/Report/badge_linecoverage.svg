@@ -77,7 +77,11 @@
 
         <text x="53" y="15" fill="#010101" fill-opacity=".3">Coverage</text>
         <text x="53" y="14" fill="#fff">Coverage</text>
+<<<<<<< HEAD
         <text class="" x="132.5" y="15" fill="#010101" fill-opacity=".3">8.5%</text><text class="" x="132.5" y="14">8.5%</text>
+=======
+        <text class="" x="132.5" y="15" fill="#010101" fill-opacity=".3">92.1%</text><text class="" x="132.5" y="14">92.1%</text>
+>>>>>>> dc01b9f82c40bbf289c86378cc40ced28a3b6b1e
         
     </g>
 

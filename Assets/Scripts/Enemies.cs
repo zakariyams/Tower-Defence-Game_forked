@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Unity.PlasticSCM.Editor.WebApi;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class Enemies : MonoBehaviour
@@ -42,14 +40,16 @@ public class Enemies : MonoBehaviour
 
     protected void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        color = healthBar.GetComponent<SpriteRenderer>();
+        curHealth = health;
+
         if (Random.Range(0, 2) == 0)
             path = LevelManager.main.Path;
         else
             path = LevelManager.main.SecondPath;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        color = healthBar.GetComponent<SpriteRenderer>();
-        curHealth = health;
+        
     }
 
     protected void AnimateSprite()

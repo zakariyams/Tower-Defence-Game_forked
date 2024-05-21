@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0,0666835">
+  <test-suite type="TestSuite" id="1000" name="Tower Defence Game" fullname="Tower Defence Game" runstate="Runnable" testcasecount="3" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.066684" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1007" name="Tests.dll" fullname="C:/Users/Jakob/Desktop/Tower-Defence-Game/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="3" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.052360" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="14300" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="Currency_test" fullname="Currency_test" classname="Currency_test" runstate="Runnable" testcasecount="1" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.032840" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="Currency_testSimplePasses" fullname="Currency_test.Currency_testSimplePasses" methodname="Currency_testSimplePasses" classname="Currency_test" runstate="Runnable" seed="1190714794" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.013533" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1003" name="firtst" fullname="firtst" classname="firtst" runstate="Runnable" testcasecount="1" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.002982" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1004" name="ReduceHealth_test" fullname="firtst.ReduceHealth_test" methodname="ReduceHealth_test" classname="firtst" runstate="Runnable" seed="330096630" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.000491" asserts="0">
+          <properties />
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1005" name="Spend_test" fullname="Spend_test" classname="Spend_test" runstate="Runnable" testcasecount="1" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.005843" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1006" name="Spend_failed_test" fullname="Spend_test.Spend_failed_test" methodname="Spend_failed_test" classname="Spend_test" runstate="Runnable" seed="361630456" result="Passed" start-time="2024-04-19 16:14:27Z" end-time="2024-04-19 16:14:27Z" duration="0.003700" asserts="0">
+          <properties />
+          <output><![CDATA[You're broke, get your money up!
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

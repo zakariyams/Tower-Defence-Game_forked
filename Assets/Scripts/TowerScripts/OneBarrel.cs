@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -12,11 +12,8 @@ public class OneBarrel : Towers
     [SerializeField] private float bps = 1f;
     private GameObject target;
     [SerializeField] private GameObject bulletspawn;
-    [SerializeField] private GameObject bullet;
+    [SerializeField] public GameObject bullet;
     [SerializeField] protected AudioSource GunShot;
-
-
-
 
     private void Awake()
     {
@@ -26,23 +23,34 @@ public class OneBarrel : Towers
         Target = target;
     }
 
+
     public override IEnumerator Fire()
     {
-        GameObject Firebullet = Instantiate(bullet, bulletspawn.transform.position, Quaternion.identity);
+        // Set the flag to indicate that Fire method has been called
+        
+
+        GameObject firebullet = Instantiate(bullet, bulletspawn.transform.position, Quaternion.identity);
         Vector2 direction = (Target.transform.position - transform.position).normalized;
-        Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
-        BulletAngle(Firebullet, Target);
+        firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
+        BulletAngle(firebullet);
         GunShot.Play();
 
+
         yield return new WaitForSeconds(1f);
-        Destroy(Firebullet);
+        Destroy(firebullet);
+        
+
+        // Reset the flag after the bullet is destroyed
     }
 
+    [ExcludeFromCodeCoverage]
+    #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+    #endif
 
 
     protected override void Update()

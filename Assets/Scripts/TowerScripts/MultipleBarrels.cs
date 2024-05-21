@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -11,23 +12,24 @@ public class MultipleBarrels : Towers
     [SerializeField] protected float bulletspeed;
     [SerializeField] protected float bps;
     [SerializeField] protected GameObject[] bulletspawn;
-    [SerializeField] protected GameObject bullet;
+    [SerializeField] public GameObject bullet;
     protected GameObject target;
+    public bool Responsive;
     public override IEnumerator Fire()
     {
         GameObject Firebullet = Instantiate(bullet, bulletspawn[0].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet, Target);
+        BulletAngle(Firebullet);
         GunShot.Play();
 
         GameObject Firebullet2 = Instantiate(bullet, bulletspawn[1].transform.position, Quaternion.identity);
-        BulletAngle(Firebullet2, Target);
+        BulletAngle(Firebullet2);
         GunShot.Play();
         
         Vector2 direction = (Target.transform.position - transform.position).normalized;
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         Destroy(Firebullet);
         Destroy(Firebullet2);
     }
@@ -39,19 +41,25 @@ public class MultipleBarrels : Towers
         Bulletspeed = bulletspeed;
         Bps = bps;
         Target = target;
+        Responsive = true;
     }
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        GunUpdate();
-    }
-
+    [ExcludeFromCodeCoverage]
+#if UNITY_EDITOR
     public void OnDrawGizmosSelected()
     {
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, transform.forward, range);
     }
+#endif
 
+
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        GunUpdate();
+
+    }
 
 }

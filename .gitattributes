@@ -6,3 +6,10 @@
 *.shader linguist-detectable=false
 *.cginc linguist-detectable=false
 *.htm linguist-detectable=false
+*.css linguist-detectable=false
+*.aspx linguist-detectable=false
+*.ascx linguist-detectable=false
+*.aspx.cs linguist-detectable=false
+*.aspx.vb linguist-detectable=false
+*.cshtml linguist-detectable=false
+*.config linguist-detectable=false

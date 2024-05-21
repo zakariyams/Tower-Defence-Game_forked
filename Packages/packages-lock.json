@@ -175,6 +175,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.purchasing": {
       "version": "4.11.0",
       "depth": 0,
@@ -250,6 +251,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> dc01b9f82c40bbf289c86378cc40ced28a3b6b1e
     "com.unity.services.cloud-build": {
       "version": "1.0.5",
       "depth": 0,
@@ -260,6 +263,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.services.cloud-diagnostics": {
       "version": "1.0.7",
       "depth": 0,
@@ -294,6 +298,10 @@
     },
     "com.unity.services.core": {
       "version": "1.12.5",
+=======
+    "com.unity.services.core": {
+      "version": "1.12.4",
+>>>>>>> dc01b9f82c40bbf289c86378cc40ced28a3b6b1e
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -303,6 +311,7 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.services.deployment": {
       "version": "1.3.0",
       "depth": 0,
@@ -399,6 +408,8 @@
       },
       "url": "https://packages.unity.com"
     },
+=======
+>>>>>>> dc01b9f82c40bbf289c86378cc40ced28a3b6b1e
     "com.unity.settings-manager": {
       "version": "2.0.1",
       "depth": 1,
