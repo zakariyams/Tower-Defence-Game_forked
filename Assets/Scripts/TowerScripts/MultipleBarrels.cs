@@ -29,7 +29,7 @@ public class MultipleBarrels : Towers
         Firebullet.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         Firebullet2.GetComponent<Rigidbody2D>().velocity = Bulletspeed * direction;
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         Destroy(Firebullet);
         Destroy(Firebullet2);
     }

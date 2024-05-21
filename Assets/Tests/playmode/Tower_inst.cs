@@ -18,7 +18,7 @@ public class tower_inst
     // `yield return null;` to skip a frame.
     
 
-    public position_script_mock position;
+    public position_script position;
     private BuildManager buildmanager;
     private LevelManager lvlmanager;
     
